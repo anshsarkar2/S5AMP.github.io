@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            C: Home Page
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta charset="utf-8"/>
+
+
+
+    <!--Styling-->    
+    <style>
+       
+       body
+        {
+            background-image:  url("/home/simple/Documents/WEB/C/background/backv.jpeg");
+            background-repeat: no-repeat;
+            background-size: 1390px 700px;
+        }
+        .content1{
+            background-size: 20000px 368px;
+            background-image: url("/home/simple/Documents/WEB/C/Images/content1.jpeg");
+
+        }
+        .subcontent1{
+            background-image: url("/home/simple/Documents/WEB/C/Images/content1.jpeg");
+            background-size: 10000px 1000px;
+            background-repeat: no-repeat;
+        }
+        .content2{
+            background-size: 20000px 368px;
+            background-color: #9e1420;
+        }
+        .subcontent2{
+            background-size: 10000px 1000px ;
+            background-color: #9e1420;
+        }
+
+        .content0
+        {
+            font-family: MADE Gentle;
+            font-size: 400px;
+            color: whitesmoke;
+            text-align: center;
+            padding-top: 80px;
+        }
+        .content1
+        {
+            font-size: 40px;
+            color: #000000;
+            padding-top: 150px;
+            text-align: right;
+            flood-opacity: 90%;
+            font-family: cursive;
+            padding-right: 20px;
+        }
+        .subcontent1
+        {
+            font-size: 20px;
+            text-align: right;
+            color: #f2f2f2;
+            padding-right: 20px;
+        }
+        .content2
+        {
+            font-size: 40px;
+            color: #000000;
+            top: 500px;
+            text-align: left;
+            padding-left: 50px;
+            flood-opacity: 90%;
+            font-family: cursive;
+            padding-left: 20px;
+
+        }
+        .subcontent2
+        {
+            font-size: 20px;
+            text-align: left;
+            color: #f2f2f2;
+            padding-left: 20px;
+        }
+        .content3
+        {
+            font-size: 40px;
+            color: #000000;
+            top: 800px;
+            text-align: right;
+            padding-right: 50px;
+            flood-opacity: 90%;
+            font-family: cursive;
+            background-color: #C25200;
+            padding-right: 20px;
+        }
+        .subcontent3
+        {
+            font-size: 20px;
+            color: #f2f2f2;
+            text-align: right;
+            background-color: #C25200;
+            padding-right: 20px;
+        }
+
+        #homebtn
+        {
+            width: 50px;
+            height: 30px;
+            border: 2px;
+            color: #d42328;
+            cursor:pointer ;
+            position: relative;
+            left: 10px;
+            top: 50px;
+            background-color: #040404;
+        }
+        #homebtn:hover
+        {
+            background-color: #2d2d2f;
+            cursor: pointer;
+        }
+        #aboutusbtn 
+        {
+            width: 80px;
+            height: 30px;
+            border: 2px;
+            color: #d42328;
+            cursor: pointer;
+            position: relative;
+            left: 20px;
+            top: 50px;
+            background-color: #040404;
+        }
+        #aboutusbtn:hover
+        {
+            background-color: #2d2d2f;
+            cursor: pointer;
+        }
+
+    </style>
+    </head>
+    <body>
+    <button  id="homebtn" onclick=window.location.href='/home/simple/Documents/WEB/home_page.html'>HOME</button>
+    <button id="aboutusbtn" onclick="aboutusbtn()" >About us</button>
+    <div class="content0">
+        C
+    </div>
+    <div class="content1">
+        It's special uses:
+    </div>
+    <div class="subcontent1">
+        The increasing popularity of C is probably due to its many<br>
+        desirable qualities. It's robust language and can be used <br>
+        to write any complex program. It is well suited for writing <br>
+        both system software and bussiness packages. C is highly <br>
+        portable. C language is well suited for structured programming, <br>
+        thus requiring the users to think of a problem in terms of <br>
+        function modules or blocks. Another important feature of C is <br>
+        it's ability to extend itself. <a href="special.html" style="color: #f2f2f2;"><u>...more</u></a>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="content2">
+        <br>
+        <br>
+        History of C:
+    </div>
+    <div class="subcontent2">
+        The origin of C is closely tied to the development of the Unix<br>
+        operating system, originally implemented in assembly language on<br>
+        a PDP-7 by Dennis Ritchie and Ken Thompson, incorporating several<br>
+        ideas from colleagues. Eventually, they decided to port the <br>
+        operating system to a PDP-11. The original PDP-11 version of Unix <br>
+        was also developed in assembly language.<a href="history.html" style="color:#f2f2f2"><u>...more</u></a>
+        <br/>
+        <br/>
+         <br/>
+         <br/>
+    </div>
+    <div class="content3">
+        Start learning 'C'
+    </div>
+    <div class="subcontent3">
+        Many later languages have borrowed syntax/features directly<br>
+        or indirectly from the C language. Like syntax of Java, PHP,<br/>
+        JavaScript, and many other languages are mainly based on the C language.<br/>
+        C++ is nearly a superset of C language (Only a few programs may<br/>
+         compile in C, but not in C++).<br>
+         So,  if a person learns C programming first, it will help him<br/>
+         to learn any modern programming language as well. As learning C help<br/>
+        to understand a lot of the underlying architecture of the operating system.<br/>
+         Like pointers, working with memory locations, etc.<a href="start.html" style="color: #f2f2f2;">..more</a><br>
+         <br>
+    </div>
+
+   </body>
+    <script>
+       function aboutusbtn(params) {
+         alert("It's Working!");
+       }
+    </script>
+</html>

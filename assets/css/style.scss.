@@ -1,0 +1,95 @@
+@import "{{ site.theme }}";
+ body{
+            font-family: cursive;
+            background-image:  url("/home/simple/Documents/WEB/Pictures/home_page.jpg");
+        }
+        .content{
+            font-family: MADE Gentle;
+            font-size: 65px;
+            color: #f3ba8c;
+            text-align: center;
+            padding: 300px 0;
+            float: center;
+        }
+       
+       /*********************************
+       *  courses btn
+       *********************************/
+       .htmlbtn
+       {
+        width: 50px;
+        height: 30px;
+        border: 2px;
+        color: #a70f0e;
+        cursor: pointer;
+        left: 100px;
+        top: 20px;
+        background-color: #0a0000;
+        position:relative;
+        display: inline-block;
+        font-family:Cambria ;
+       }
+       .htmlbtn-ht{
+        display: none;
+        position: absolute;
+        background-color: #a70f0e;
+        min-width: 160px;
+        padding: 12px 16px;
+        z-index: 1;
+    
+       }
+       .htmlbtn:hover{
+        background-color: #1a0001;
+        color: greenyellow;
+       }
+       .htmlbtn:hover .htmlbtn-ht
+       {
+        display: block;
+        width: 50px;
+        font-family:Cambria;
+        background-color: #1a0001;
+       }
+       
+       
+        /*********************************
+        * home button css 
+        *********************************/
+        #myhomebtn{
+            width: 50px;
+            height: 30px;
+            border: 2px;
+            color: #a70f0e;
+            cursor: pointer;
+            position:fixed;
+            left: 30px;
+            top: 20px;
+            background-color: #0a0000;
+        }
+        #myhomebtn:hover{
+            background-color: #1a0001;
+            color: greenyellow;
+        }
+   
+/* about us btn */
+       #aboutbtn
+       {
+        width: 100px;
+        height: 30px;
+        border: 2px;
+        color: #a70f0e;
+        cursor: pointer;
+        position: relative;
+        left: 80px;
+        top: 20px;
+        background-color: #0a0000;
+       }
+       #aboutbtn:hover
+       {
+        background-color: #1a0001;
+        color:greenyellow ;
+       }
+          
+   
+   
+   
+   
