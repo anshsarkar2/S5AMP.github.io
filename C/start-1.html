@@ -49,6 +49,12 @@
                 font-size: xx-large;
                 padding-top: 0px;
             }
+            .code
+            {
+                text-align: center;
+                font-size: 20px;
+                font-family: monospace;
+            }
         </style>
         <!--Styling Ends here-->
     </head>
@@ -98,10 +104,50 @@
             </div>
         </div>  
         <div class="h1-1">
-            Programming Style
+           <u> Programming Style </u>
             <div class="h1-1-content">
+                <p>
                 Unlike some other Programming Language , C is a free-form language. That is, the C compiler <br>
-                does not care, where on the line we begin typing.
+                does not care, where on the line we begin typing. While we should try to use this fact to<br>
+                our advantage in devloping readable programs.</p>
+                <p>
+                    First of all, we must devlop the habit of writing programs in lowercase letters.<br>
+                    C programs satements are written in lowercase letters. Uppercase letters are used <br/>
+                    only for symbolic constants.  
+                </p>
+                <p>
+                    Braces, group program statements would make the beginning and end of functions. <br/>
+                    A proper indentation of braces and statements would make a program easier to <br/>
+                    read and debug.
+                </p>
+                <p>
+                    Since C is a freeform lanuage , we can group statements togeather on one line link:<br/>
+                    <div class="code">
+                        a = b;<br>
+                        x = y + 1;<br>
+                        z = a +x ;<br>
+                    </div>
+                    Can also be written as :<br/>
+                    <div class="code">
+                        a = b; x = y; z = a + x;<br/>
+                    </div>   
+                    As examples help us to co-relate with problems. Let's see another example:<br/>
+                    The given program:
+                    <div class="code">
+                        <p>
+                        main ()<br/>
+                        {<br/>
+                            printf("Hello! C");<br/>
+                        }<br/>
+                    </p>
+                    </div>
+                    <br>
+                    Can also be written as:<br>
+                    <div class="code">
+                        <br>
+                        main(){printf("Hello! C")};
+                </div>
+                </p>
             </div>
         </div>
     </body>
