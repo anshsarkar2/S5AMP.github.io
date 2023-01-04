@@ -29,6 +29,17 @@
                 font-family: cursive;
                 margin-left: 20px;
             }
+            code
+            {
+                font-family: monospace;
+                color: #000000;
+                font-size:  25px;
+                margin-left: 25px;
+            }
+            table, th, td
+            {
+                 border: 5px solid;
+            }
         </style>
     </head>
     <body >
@@ -301,7 +312,7 @@
             </dl>
             <dl>
                 <dt>
-                    Real Constants
+                   <b><u> Real Constants</u></b>
                 </dt>
                 <dd>
                    <p> Integer numbers are inadequate to represent quantities that vary continuously,<br/>
@@ -324,9 +335,161 @@
                             </tr>
                         </table>
                     </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <b><u>Single Character Constants</u></b>
+                </dt>
+                <dd>
                     <p>
-                        
+                        A singlr character constant (or simple character constant) contains a single<br/>
+                        character enclosed within a pair of single quote marks.<br/>
+                        Examples:<br/>
+                        '5' , 'X' , ';'
                     </p>
+                    <p>
+                        Note in the above example character constant '5' is not equal to as number 5.<br/>
+                        Character constants have  a integer values known as ASCII values.<br/>
+                        For example:<br/>
+                        <code>
+                            <b>printf("%d" , 'a');</b>
+                        </code>
+                        <br/>
+                        would print the number 97, the ASCII values of the letter a.<br/>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <u><b>String Constants</b></u>
+                </dt>
+                <dd>
+                  <p> 
+                    A string constant is a sequence of characters enclosed in doubble quotes<br/>
+                    THe characters may be letters, numbers, special numbers and blank spaces.<br/>
+                    Examples:<br/>
+                    "HEllo" , "1987" , "Well Done" , etc
+                  </p>
+                  <p>
+                    Remember that a character constant is not equivalent to string constant.<br>
+                    Character strings are often used in programs to build meaningful programs.
+                  </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    Backslash Character Constants
+                </dt>
+                <dd>
+                    C suppourts some special backslash  character constants that are used in <br/>
+                    oputput functions. For example, the symbol '\n' stands for newline character.
+                    <table width="50%">
+                        <tr>
+                            <th>
+                                Constants
+                            </th>
+                            <th>
+                                Meaning
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                \a
+                            </td>
+                            <td>
+                                audible alert (bell)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                \b
+                            </td>
+                            <td>
+                                back space
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                \f
+                            </td>
+                            <td>
+                                form feed
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                \n
+                            </td>
+                            <td>
+                                new line
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                \r
+                            </td>
+                            <td>
+                                carriage return
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                \t
+                            </td>
+                            <td>
+                                horizontal tab
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                \v
+                            </td>
+                            <td>
+                                vertical tab
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                \
+                            </td>
+                            <td>
+                                single quote
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                \"
+                            </td>
+                            <td>
+                                double quote
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                \?
+                            </td>
+                            <td>
+                                question mark
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                \\
+                            </td>
+                            <td>
+                                backslash
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                \0
+                            </td>
+                            <td>
+                                null
+                            </td>
+                        </tr>
+                    </table>
                 </dd>
             </dl>
         </div>
