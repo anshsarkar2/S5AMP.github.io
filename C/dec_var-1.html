@@ -7,11 +7,239 @@
         <style>
             body
             {
-                background-image: linear-gradient(to right , );
+                background-image: linear-gradient(to right , #08a880 , #1d01e2);
+            }
+            .h1
+            {
+                color: #f3ba8c;
+                font-size: 80px;
+                font-family: cursive;
+                margin-left: 140px;
+            }
+            .h2-head
+            {
+                color: rgb(9, 32, 163);
+                font-size: 40px;
+                font-family: cursive;
+            }
+            .h2-content
+            {
+                color: floralwhite;
+                font-size: 30px;
+                font-family: cursive;
+                margin-left: 20px;
+            }
+            table, td, th
+            {
+                border: double;
+            }
+            code
+            {
+                font-family: monospace;
+                color: #000000;
+                font-size:  20px;
+                padding-left: 50px;
             }
         </style>
     </head>
     <body>
+        <br/>
+        <br/>
+        <br/>
+        <hr color="#000000" width="80%">
+        <div class="h1">
+            Declaration Of Variables
+        </div>
+        <hr color="#000000" width="80%">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+            <p>
+                After declaring suitable variable names, we must declare them to the compiler. <br/>
+                Declaration does two things:<br>
+                <ul>
+                    <li>
+                        It tells the compiler what the variable name is.
+                    </li>
+                    <li>
+                        It specifies what type of data the variable will hold.
+                    </li>
+                </ul>
+                The declaration of variables must be done before they are used in the program.
+            </p>
+            <div class="h2-head">
+               <u><b> Primary Type Declaration</b></u>
+            </div>
+            <div class="h2-content">
+                A variable can be used to store a value of any data type. That is, the name has <br/>
+                nothing to do with it's type. THe syntax for declaring a variable is as follows:
+                <table style="border: 5px;" width="50%">
+                    <tr>
+                        <th>
+                            <b>data-type v1,v2,...vn ;</b>
+                        </th>
+                    </tr>
+                </table>
+                v1, v2, ...vn are the names of variables. Variables are seprated by commas.<br/>
+                A declaration statement must end with a semicolon.<br/>
+                For example, valid declaration are:
+                  <code>
+                    <br/>
+                    <b>int</b> count;
+                    <br/>
+                    <b>int</b> number, total;
+                    <br/>
+                    <b>double</b> ratio;
+                  </code>
+                  <br/>
+                <b>int</b> and <b>double</b> are the keywords to represent integer type and real<br/>
+                type data values respectively. 
+                <table>
+                    <tr>
+                        <th>
+                            Data Type
+                        </th>
+                        <th>
+                            Keyword equivalent
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Character 
+                        </td>
+                        <td>
+                            char 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Unsigned character
+                        </td>
+                        <td>
+                            unsigned char 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Signed character
+                        </td>
+                        <td>
+                            signed char 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Signed integer
+                        </td>
+                        <td>
+                            signed int
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                             Signed short integer
+                        </td>
+                        <td>
+                            signed short int
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Signed long integer
+                        </td>
+                        <td>
+                            signed long int
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Unsigned integer
+                        </td>
+                        <td>
+                            unsigned int
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            unsigned short integer
+                        </td>
+                        <td>
+                            unsigned short int
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Unsigned long integer
+                        </td>
+                        <td>
+                            unsigned long int
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Floating point
+                        </td>
+                        <td>
+                            float
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Double-precision floating point 
+                        </td>
+                        <td>
+                            double
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Extended double-precision floating point 
+                        </td>
+                        <td>
+                            long double
+                        </td>
+                    </tr>
+                </table>  
+                <br/>
+                <b>main( )</b> is the beginning of the program. The opening braces <b>{</b> signals the execution<br/>
+                of the program. Declaration of the variable is usally done after the opening braces. <br/>
+                Sometimes variables can also be declared outside the main. <br/>
+                <table width="100%">
+                    <tr>
+                        <th>
+                            <b>
+                                <u>
+                                    Declaration of variables
+                                </u>
+                            </b>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                main()  /*****************Program Name*****************/
+                                <br/>
+                                {
+                                    <br>
+                                    /*************Declaration*******************/<br/>
+                                    float x,y;<br/>
+                                    int code;<br/>
+                                    short int  count;<br/>
+                                    long int amount;<br/>
+                                    double deviation;<br/>
+                                    unsigned int n;<br/>
+                                    char c;<br>
+                                    /****************Computation*********************/<br/>
+                                     . . . . <br/>
+                                     . . . . <br/>
+                                     . . . . <br/>
+                                }   /************Program Ends***********************/ 
+                            </code>
+                        </td>
+                    </tr>
+                </table>   
+            </div>
 
     </body>
 </html>
