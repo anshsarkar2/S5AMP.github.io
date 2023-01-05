@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Declaration of storage class
+        </title>
+        <style>
+            body
+            {
+                background-image: linear-gradient(to right, #08a880 , #1d01e2);
+            }
+            .h1
+            {
+                color: #f3ba8c;
+                font-size: 70px;
+                font-family: cursive;
+                margin-left: 140px;
+            }
+            .h2-head
+            {
+                color: rgb(9, 32, 163);
+                font-size: 40px;
+                font-family: cursive;
+            }
+            .h2-content
+            {
+                color: floralwhite;
+                font-size: 30px;
+                font-family: cursive;
+                margin-left: 20px;
+            }
+            code
+            {
+                font-family: monospace;
+                color: #000000;
+                font-size: 20px;
+                padding-left: 50px;
+            }
+            table , th , td
+            {
+                border: double;
+            }
+            cursive
+            {
+                font-family: sans-serif;
+                font-style: italic;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <hr color="#000000" width="75%"/>
+        <element class="h1">
+           <b> Declaration of Storage Class</b>
+        </element>
+        <hr color="#000000" width="75%"/>
+        <br/>
+        <br/>
+        <br/>
+        <element class="h2-content">
+            Variables in C can not only <cursive>data type</cursive> but also <cursive>storage class</cursive> that provides<br/>
+            information about their locality and visiblity.  The storage class decides the portion of the program within which the variable s<br/>
+            are recognised. Consider the following example:
+            <code>
+                <table>
+                    <tr>
+                        <td>
+                            <code>
+                <br/>
+                /* EXample of storage class*/<br/>
+                int m;<br/>
+                main()<br/>
+                {<br/>
+                  int i;<br/>
+                  float balance;<br/>
+                  ....<br/>
+                  function1();<br/>
+                }<br/>
+                function1()<br/>
+                {<br/>
+                   int i;<br/>
+                   float sum;<br/>
+                   ...<br/>
+                   ... <br/>
+                }<br/>
+                            </code>
+                        </td>
+                    </tr>
+                </table>
+            </code>
+            <p>
+                THe variable m which has been declared before the <b>main</b> is called global variable<br/>
+                It can be used in all functions in program. It need not be declared in other functions.A global<br>
+                variable is also known as an external variable.
+            </p>
+            <p>
+                THe variable <b>i</b>, <b>balance</b> and <b>sum</b> are called local variables because they are<br>
+                declared inside a function. 
+            </p>
+            <p>
+                C provides a variety of storage class specifiers 
+            </p>
+        </element>
+    </body>
+</html>
