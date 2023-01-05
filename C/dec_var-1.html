@@ -40,6 +40,19 @@
                 font-size:  20px;
                 padding-left: 50px;
             }
+            #nextpgbtn
+            {
+                margin-left: 900px;
+                width: 100px;
+                height: 50px;
+            }
+            #prevbtn
+            {
+                margin-left: 20px;
+                margin-top: 20px;
+                width: 200px;
+                height: 50px;
+            }
         </style>
     </head>
     <body>
@@ -238,8 +251,112 @@
                             </code>
                         </td>
                     </tr>
-                </table>   
+                </table>
+                <p>
+                    When an qualifier <b>short</b>, <b>long</b>, or <b>unsigned</b> is used without basic<br/>
+                    type specifier, C compilers treat data types as an <b>int</b>. If we want to use the<br/>
+                    specific type we have to define it to the compiler.
+                </p>   
             </div>
-
+            <div class="h2-head">
+                <b><u>User-defined Type declaration</u></b>
+            </div>
+            <div class="h2-content">
+                C suppourts a feature known as "type defination" that allows users to define an identifier<br/>
+                that would represent an existing data type. The user defined data type identifier can later<br/>
+                be used to declare variables. It takes the Genral Form:<br/>
+                <table>
+                    <tr>
+                        <th>
+                            typedef <code>type identifier;</code>
+                        </th>
+                    </tr>
+                </table>
+                <p>
+                    Where type refers to an existing data types and identifiers refer to the new  name<br/>
+                    given to the data type. THe existing data type may belong to any class of type, <br/>
+                    including the user defined ones. Remember that the new type is 'new' only in name <br/>
+                    but not the data type. <b>typedef</b> cannot create a new type. <br/>
+                    Some examples of type defination are:<br/>
+                    <code>
+                        <b>typedef int</b> units;<br/>
+                        <b>typedef float</b> marks;<br/> 
+                    </code> 
+                </p>
+                <p>
+                    Here, units symbolizes <b>int</b> and <b>mark</b> symbolizes <b>float</b>.<br/>
+                    THey can be later used to declare variable as follows:<br/>
+                    <code>
+                        <b>units</b> batch1 , batch2;<br/>
+                        <b>marks</b> name1[50], name2[50];<br/>
+                    </code>
+                </p>
+                <p>
+                    batch1 and batch2 are inclared as <b>int</b> variable and name1[50] and name2[50]<br/>
+                    declared as 50 elements floating point array variables. The main advantage of <b>typedef</b><br/>
+                    is that we can create meaningful data type names for increasing the readiblity of the program.<br>
+                    Another user-defined data type is enumerated data type provided by ANSI standard.<br/>
+                    It is defined as follows:
+                    <table>
+                        <code>
+                            <b>enum identifier{value1,value2,...valuen};</b>
+                        </code>
+                    </table>
+                </p>
+                <p>
+                    THe "identifier" is  a user-defined enumerated  data type which can be used to declare<br/>
+                    variables that can have one of the values enclosed within the braces (known as <br/>
+                    enumeration constants). After this defination, we can declare variables to be of this<br/>
+                    new type as below:<br>
+                    <code><b>enum</b> identifier v1, v1, ...vn; </code>
+                    <br/>
+                    The enumerated variables v1, v2, vn can only have on the values value1, value2, ...valuen.<br/>
+                    THe assignments of the following type are valid:<br/>
+                    <code>
+                        v1 = value3;<br>
+                        v5 = value1;
+                    </code><br/>
+                    An Example:<br/>
+                    <code>
+                        <b>enum day</b> {Monday,Tuesday,...Sunday};<br/>
+                        <b>enum day</b> week_st, week_end;<br/>
+                        week_st = Monday;<br/>
+                        week_end = Friday;<br/>
+                        if(week_st == Tuesday)
+                        week_end = Saturday;
+                    </code>
+                </p>
+                <p>
+                    THe compiler automatically assigns integer digits beginning with 0 to all enumeration <br/>
+                    constants. That is, the enumeration constant value1 is assigned 0, value2 is assigned 1, and<br/>
+                    so on. However, the automatic assignments can be overridden by assigning values explicitly<br/>
+                    to the enumeration constants. For example:
+                    <code>
+                        <b>enum day</b>{Monday = 1, Tuesday, ...Sunday};
+                    </code>
+                </p>
+                <p>
+                    Here the constant Monday is assigned the value of 1. The remaining constants are as signed <br/>
+                    values that increases successively by 1.
+                </p>
+                <p>
+                    THe defination and declaration of enumerated variables can be combined in one statement.<br>
+                    For Example:<br/>
+                    <code>
+                        enum day {Monday, ...Sunday} week_st, week_end;
+                    </code>
+                </p>
+            </div>
+            <hr color="#000000" width="80%">
+            <br/>
+            <br/>
+            <button id="prevbtn">
+                Previous page
+            </button>
+            <button id="nextpgbtn">
+                <a href="dec_sto_cla.html">
+                    Next page
+                </a>
+            </button>
     </body>
 </html>
