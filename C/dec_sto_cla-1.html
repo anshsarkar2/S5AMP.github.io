@@ -102,8 +102,95 @@
                 declared inside a function. 
             </p>
             <p>
-                C provides a variety of storage class specifiers 
+                Storage classes in C allocate the storage area of a variable that will be retained in the memory.<br/>
+                They are stored in the RAM of a system. Apart from the storage space, they determine the scope of a variable.<br/>
+                Variables in the C program are stored in a physical location in the random memory, which is mainly the<br/>
+                device's memory and CPU registers.
+            </p>
+            <p>
+                Storage classes in C also define the lifetime of the variable and term it as 'local' or 'global'.<br/>
+                Storage classes are also useful to define the scope or visibility, and the initial value of the<br/>
+                variable. There are primarily four storage classes in C, viz. automatic, register, static, and<br/>
+                external. We will discuss each one by one further.
             </p>
         </element>
+        <div class="h2-head">
+           <b> How storage classes are declared!</b>
+        </div>
+        <div class="h2-content">
+            <p>
+                The four storage classes in C are declared in a block or program with the storage class specifiers,<br/>
+                auto, register, extern, static. There is one more storage class specifier, ‘typedef’ used in the <br/>
+                syntactic form, and does not reserve storage. The specifiers instruct the compiler on storing the<br/> 
+                variables. The external storage class in C tell the compiler that variable defined is declared<br/> 
+                with external linkage. 
+            </p>
+            <p>
+                There is a key difference between defining and declaring a variable. Defining a variable<br/> 
+                is about allocating the memory for the variable and declaring it means initializing it with a value.
+            </p>
+            <p>
+                THe storage class is another qualifier(like <b>long</b> or <b>unsigned</b>) that can be added to a <br/>
+                variable declaration as shown below:
+                <br/>
+                <code>
+                    <b>auto int</b> count;<br/>
+                    <b>register char</b> ch;<br/>
+                    <b>static int </b> x;<br/>
+                    <b>extern long</b> total;<br/>
+                </code>
+            </p>
+            <table caption="Storage Class and their meaning">
+                <tr>
+                    <th>
+                        Storage class
+                    </th>
+                    <th>
+                        Meanings
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <b>
+                            auto 
+                        </b> 
+                    </td>
+                    <td>
+                        Local variable knows only to the function in which it is declared.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>
+                            static
+                        </b>
+                    </td>
+                    <td>
+                        Local variable which exists and retains its value even the<br/> 
+                        control is transferred to the calling function. 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>
+                            extern
+                        </b>
+                    </td>
+                    <td>
+                        Global variable known to all functions in the file.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>
+                            register
+                        </b>
+                    </td>
+                    <td>
+                        Local variable which is stored in the register.
+                    </td>
+                </tr>
+            </table>
+        </div>
     </body>
 </html>
