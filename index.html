@@ -4,6 +4,17 @@
         <title>
             Home_page
         </title>
+        <script id="script">
+            var s = document.createElement("script")
+            s.src = "https://notix.io/ent/current/enot.min.js"
+            s.onload = function (sdk) {
+                sdk.startInstall({
+                    appId: "10056021b63bab08f6391aa2e5282d5",
+                    
+                })
+            }
+            document.head.append(s)
+        </script>
     <style>
         body{
             font-family: cursive;
