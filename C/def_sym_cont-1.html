@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="Screenshot from 2023-01-08 17-48-22.png"/>
+        <title>
+            Declaring Symbolic constant
+        </title>
+        <style>
+            body
+            {
+                background-image: linear-gradient(to right, #08a880, #1d01e2);
+            }
+            .h1
+            {
+                color: #f3ba8c;
+                font-size: 70px;
+                font-family: cursive;
+                margin-left: 130px;
+            }
+            .h2-head
+            {
+                color: rgb(9, 32, 163);
+                font-size: 40px;
+                font-family: cursive;
+            }
+            .h2-content
+            {
+                color: floralwhite;
+                font-size: 30px;
+                font-family: cursive;
+                margin-left: 20px;
+            }
+            code
+            {
+                font-family: monospace;
+                color: #000000;
+                font-size: 20px;
+                padding-left: 50px;
+            }
+            table , th , td
+            {
+                border: dotted;
+                background-color: rgb(184, 134, 11);
+                border-radius: 5px;
+                border-color: black;
+            }
+            cursive
+            {
+                font-family: sans-serif;
+                font-style: italic;
+                font-size: 20px;
+            }
+            #nextpgbtn
+            {
+                margin-left: 900px;
+                width: 100px;
+                height: 50px;
+            }
+            #prevpgbtn
+            {
+                margin-left: 20px;
+                width:100px ; 
+                height:50px ;
+            }
+        </style>
+    </head>
+    <body>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <hr color="#000000" width="85%"/>
+        <div class="h1">
+            <b>
+                Defining Symbolic Constants
+            </b>
+        </div>
+        <hr color="#000000" width="85%"/>
+        <br/>
+        <br/>
+        <br/>
+        <p>
+            <dl>
+                <dt>
+                    <b>
+                        <div class="h2-head">
+                    Symbolic Constants-
+                        </div>
+                    </b> 
+                </dt>
+                <dd>
+                    <div class="h2-content">
+                    <p>
+                        Symbolic Constant is a name that substitutes for a sequence of characters or a numeric constant,<br/>
+                        a character constant or a string constant.
+                    </p>
+                    <p>
+                        When program is compiled each occurrence of a symbolic constant is replaced by its corresponding character sequence.
+                    </p>
+                    </div>
+                </dd>
+            </dl>
+        </p>
+        <p>
+            <dl>
+                <dt>
+                    <div class="h2-head">
+                        The syntax of Symbolic Constants in C
+                    </div>
+                </dt>
+                <dd>
+                    <div class="h2-content">
+                        <p>
+                            <table width="35%">
+                                <tr>
+                                    <td>
+                                        <code>
+                                            <b>
+                                                #define name text 
+                                            </b>
+                                        </code>
+                                    </td>
+                                </tr>
+                            </table>
+                        </p>
+                        <p>
+                            <div class="h2-content">
+                                <p>
+                                    where <b>name</b> implies symbolic name in caps.
+                                </p>
+                                <p>
+                                    <b>text</b> implies value or the text.
+                                </p>
+                                <p>
+                                    <b>
+                                        For example:- 
+                                    </b>
+                                    <ul>
+                                        <li>
+                                            #define printf print 
+                                        </li>
+                                        <li>
+                                            #define MAX 50
+                                        </li>
+                                        <li>
+                                            #define TRUE 1
+                                        </li>
+                                        <li>
+                                            #define FALSE 0
+                                        </li>
+                                        <li>
+                                            #define SIZE 15
+                                        </li>
+                                    </ul>
+                                    The # is used for preprocesser commands.
+                                </p>
+                            </div>
+                        </p>
+                    </div>
+                </dd>
+            </dl>
+        </p>
+        <p>
+            <div class="h2-head">
+                <b>
+                    Advantages of using Symbolic Constants
+                </b>
+            </div>
+            <div class="h2-content">
+                <p>
+                    They can be used to assign names to values.
+                </p>
+                <p>
+                    Replacement of value has to be done at one place and wherever<br/> 
+                    the name appears in the text it gets the value by execution of the preprocessor.
+                </p>
+                <p>
+                    This saves time. if the Symbolic Constant appears 20 times in<br/> 
+                    the program; it needs to be changed at one place only.
+                </p>
+            </div>
+        </p>
+        <hr color="#000000" width="90%"/>
+        <button id="prevpgbtn">
+            <a href="" target="_parent">
+                Back to previous page!
+            </a>
+        </button>
+        <button id="nextpgbtn">
+            <a href="dec_a_var_as_con.html" target="_parent">
+                Next page
+            </a>
+        </button>
+    </body>
+</html>
