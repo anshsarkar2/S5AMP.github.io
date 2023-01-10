@@ -3,7 +3,7 @@
     <head>
         <link rel="icon" type="image/png" href="Screenshot from 2023-01-08 17-48-22.png"/>
         <style>
-             body
+            body
             {
                 background-image: linear-gradient(to right, #08a880 , #1d01e2);
             }
@@ -12,7 +12,7 @@
                 color: #f3ba8c;
                 font-size: 70px;
                 font-family: cursive;
-                margin-left: 90px;
+                margin-left: 80px;
             }
             .h2-head
             {
@@ -61,4 +61,81 @@
             }
         </style>
     </head>
+    <body>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <p>
+            <div class="h1">
+                <hr color="#000000" width="85%"/>
+                <b>
+                    Declaring variable as Volatile
+                </b>
+                <hr color="#000000" width="85%"/>
+            </div>
+        </p>
+        <p>
+            <dl>
+                <dd>
+                    <div class="h2-content">
+                        ANSI standard defines qualifier <b>volatile</b> that could be used <br/>
+                        to tell explicitly the complier that a variable's value may be changed at any time<br/>
+                        by some external sources(from outside the program).<br/>
+                        <table width="37%">
+                            <tr>
+                                <td>
+                                    <code>
+                                        <b>
+                                            volatile int 
+                                        </b>
+                                        date;
+                                    </code>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </dd>
+            </dl>
+        </p>
+        <p>
+            <div class="h2-content">
+                Remember that the value of a variable declared as <b>volatile</b> can be modified by it's own<br/>
+                program as well. If we wish that the value must not be modified by the program while its own <br/>
+                as well. If we wish that the value must not be modified by the program while it may be altered<br/> 
+                by some other process, then we may declare the variable as both <b>const</b> and <b>volatile</b><br/>
+                as shown below:<br/>
+                <table>
+                    <tr>
+                        <td>
+                            <code>
+                                <b>
+                                    volatile const int
+                                </b>
+                                location = 100;
+                            </code>
+                        </td>
+                    </tr>
+                </table>
+             </div>
+        </p>
+        <hr color="#000000" width="85%"/>
+        <button id="prevpgbtn">
+            <a>
+                Back to previous page!
+            </a>
+        </button>
+        <button id="nextpgbtn" onclick="function1()">
+                THe chapter is over!
+        </button>
+    </body>
+    <script>
+        function function1(params) 
+        {
+            if(window.confirm("Congratulations! The chapter is over and I wish that your \n journey is excited and wonderful!\n For any suggestions click on this link."))
+            {
+                window.location.href="gmail.html";
+            }
+        }
+    </script>
 </html>
