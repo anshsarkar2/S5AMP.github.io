@@ -19,20 +19,49 @@
             document.head.append(s)
         </script>
     <style>
-        body{
-            font-family: cursive;
-            background-image:  url("Pictures/pngtree-abstract-futuristic-circuit-board-and-high-computer-technology-on-dark-blue-picture-image_1872543.png");
-            background-size: cover;
-            background-repeat: repeat;
-        }
-        .content{
-            font-family: MADE Gentle;
-            font-size: 65px;
-            color: rgb(0, 255, 55);
-            text-align: center;
-            padding: 100px 0;
-            float: center;
-        }
+        body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("Pictures/pngtree-abstract-futuristic-circuit-board-and-high-computer-technology-on-dark-blue-picture-image_1872543.png");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
        
        /*********************************
        *  courses btn
@@ -44,16 +73,17 @@
         border: 2px;
         color: #a70f0e;
         cursor: pointer;
-        left: 100px;
+        left: 180px;
         top: 20px;
         background-color: #01000e;
-        position:relative;
+        position:fixed;
         display: inline-block;
         font-family:Cambria ;
+        text-align: center;
        }
        .htmlbtn-ht{
         display: none;
-        position: absolute;
+        position:relative;
         background-color: #a70f0e;
         min-width: 160px;
         padding: 12px 16px;
@@ -86,6 +116,7 @@
             left: 30px;
             top: 20px;
             background-color: #010001;
+            text-align: center;
         }
         #myhomebtn:hover{
             background-color: #1a0001;
@@ -100,10 +131,11 @@
         border: 2px;
         color: #a70f0e;
         cursor: pointer;
-        position: relative;
+        position: fixed;
         left: 80px;
         top: 20px;
         background-color: #010001;
+        text-align: center;
        }
        #aboutbtn:hover
        {
@@ -113,12 +145,9 @@
         </style>
    
     </head>
-    
+    <div class="bg-image"></div>
     <button id="myhomebtn" onclick="homefunction()">HOME</button>
     <button id="aboutbtn" onclick="aboutfuncition()">About us</button>
-    
-    
-    
     <div class="htmlbtn">
         <span>
             C
@@ -129,14 +158,21 @@
                     Roadmap to matster C
                 </a>
                 <br>
+                <br/>
                 <a href="C/main_page.html" target="_parent">
                     Starting learning C!
                 </a>
             </p>
         </div>
     </div>
-    <div class="content">
-        Welcome! to the world<br>of programming.<br/><br/><br/>
+    
+    
+    
+    
+    
+   
+    <div class="bg-text">
+       <h1> Welcome! to the world<br>of programming.</h1><br/><br/><br/>
         <img src="Screenshot from 2023-01-08 17-48-22.png" width="200px" height="200px"/>
     </div>
     <a target="_blank" href="https://www.amazon.com/b?_encoding=UTF8&tag=educatio06ea3-20&linkCode=ur2&linkId=c99c9800c4c1d2a98f9bcef2ea0064fa&camp=1789&creative=9325&node=75">Happy shopping and success</a>
