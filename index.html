@@ -1,366 +1,117 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Home_page
-        </title>
-        <meta content="This list of C and C++ language-learning resources includes interactive courses, the best C++ tutorials, public-domain code collections, and books. If you&#39;re curious about the best way to learn C++ or C, start here!" name="description" /><meta content="This list of C and C++ language-learning resources includes interactive courses, the best C++ tutorials, public-domain code collections, and books. If you&#39;re curious about the best way to learn C++ or C, start here!" name="description" /><meta content="This list of C and C++ language-learning resources includes interactive courses, the best C++ tutorials, public-domain code collections, and books. If you&#39;re curious about the best way to learn C++ or C, start here!" name="description" /><meta content="This list of C and C++ language-learning resources includes interactive courses, the best C++ tutorials, public-domain code collections, and books. If you&#39;re curious about the best way to learn C++ or C, start here!" name="description" /><meta content="This list of C and C++ language-learning resources includes interactive courses, the best C++ tutorials, public-domain code collections, and books. If you&#39;re curious about the best way to learn C++ or C, start here!" name="description" /><meta content="This list of C and C++ language-learning resources includes interactive courses, the best C++ tutorials, public-domain code collections, and books. If you&#39;re curious about the best way to learn C++ or C, start here!" name="description" />
-        <meta name="description" content="C is a powerful general-purpose programming language. Our C tutorials will guide you to learn C programming one step at a time with the help of example"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-        <link rel="icon" type="image/png" href="Screenshot from 2023-01-08 17-48-22.png"/> <link rel="stylesheet" href="style.css"> 
-    <style>
-        /*Menu bar circular*/
-
-body {
-    padding: 0;
-    margin: 0;
-    background: #333;
-    color: #EEEEEE;
-    text-align: center;
-    font-family: "Lato", sans-serif;
- }
-  
- a {
-    color: inherit;
- }
- .expandmenu {
-    display: none;
- }
-  
- .menu-item,
- .expandmenu-button {
-    background: #EEEEEE;
-    border-radius: 100%;
-    width: 80px;
-    height: 80px;
-    margin-left: -580px;
-    position: fixed;
-    color: #FFFFFF;
-    text-align: center;
-    line-height: 80px;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-transition: -webkit-transform ease-out 200ms;
-    transition: -webkit-transform ease-out 200ms;
-    transition: transform ease-out 200ms;
-    transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
- }
-  
- .lines {
-    width: 25px;
-    height: 3px;
-    background: #596778;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -12.5px;
-    margin-top: -1.5px;
-    -webkit-transition: -webkit-transform 200ms;
-    transition: -webkit-transform 200ms;
-    transition: transform 200ms;
-    transition: transform 200ms, -webkit-transform 200ms;
- }
-  
- .first-line {
-    -webkit-transform: translate3d(0, -8px, 0);
-    transform: translate3d(0, -8px, 0);
- }
-  
- .sec-line {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
- }
-  
- .third-line {
-    -webkit-transform: translate3d(0, 8px, 0);
-    transform: translate3d(0, 8px, 0);
- }
-  
- .expandmenu:checked + .expandmenu-button .first-line {
-    -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
-    transform: translate3d(0, 0, 0) rotate(45deg);
- }
-  
- .expandmenu:checked + .expandmenu-button .sec-line {
-    -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
-    transform: translate3d(0, 0, 0) scale(0.1, 1);
- }
-  
- .expandmenu:checked + .expandmenu-button .third-line {
-    -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
-    transform: translate3d(0, 0, 0) rotate(-45deg);
- }
-  
- .menu {
-    margin: auto;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    box-sizing: border-box;
-    font-size: 26px;
- }
-  
-  
- .menu-item:hover {
-    background: #EEEEEE;
-    color: #3290B1;
- }
-  
- .menu-item:nth-child(3) {
-    -webkit-transition-duration: 180ms;
-    transition-duration: 180ms;
- }
-  
- .menu-item:nth-child(4) {
-    -webkit-transition-duration: 180ms;
-    transition-duration: 180ms;
- }
-  
- .menu-item:nth-child(5) {
-    -webkit-transition-duration: 180ms;
-    transition-duration: 180ms;
- }
-  
- .menu-item:nth-child(6) {
-    -webkit-transition-duration: 180ms;
-    transition-duration: 180ms;
- }
-  
- .menu-item:nth-child(7) {
-    -webkit-transition-duration: 180ms;
-    transition-duration: 180ms;
- }
-  
- .menu-item:nth-child(8) {
-    -webkit-transition-duration: 180ms;
-    transition-duration: 180ms;
- }
-  
- .menu-item:nth-child(9) {
-    -webkit-transition-duration: 180ms;
-    transition-duration: 180ms;
- }
-  
- .expandmenu-button {
-    z-index: 2;
-    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    -webkit-transition-duration: 400ms;
-    transition-duration: 400ms;
-    -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
-    transform: scale(1.1, 1.1) translate3d(0, 0, 0);
-    cursor: pointer;
-    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
- }
-  
- .expandmenu-button:hover {
-    -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
-    transform: scale(1.2, 1.2) translate3d(0, 0, 0);
- }
-  
- .expandmenu:checked + .expandmenu-button {
-    -webkit-transition-timing-function: linear;
-    transition-timing-function: linear;
-    -webkit-transition-duration: 200ms;
-    transition-duration: 200ms;
-    -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
-    transform: scale(0.8, 0.8) translate3d(0, 0, 0);
- }
-  
- .expandmenu:checked ~ .menu-item {
-    -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
-    transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
- }
-  
- .expandmenu:checked ~ .menu-item:nth-child(3) {
-    transition-duration: 180ms;
-    -webkit-transition-duration: 180ms;
-    -webkit-transform: translate3d(0.08361px, -104.99997px, 0);
-    transform: translate3d(0.08361px, -104.99997px, 0);
- }
-  
- .expandmenu:checked ~ .menu-item:nth-child(4) {
-    transition-duration: 280ms;
-    -webkit-transition-duration: 280ms;
-    -webkit-transform: translate3d(90.9466px, -52.47586px, 0);
-    transform: translate3d(90.9466px, -52.47586px, 0);
- }
-  
- .expandmenu:checked ~ .menu-item:nth-child(5) {
-    transition-duration: 380ms;
-    -webkit-transition-duration: 380ms;
-    -webkit-transform: translate3d(90.9466px, 52.47586px, 0);
-    transform: translate3d(90.9466px, 52.47586px, 0);
- }
-  
- .expandmenu:checked ~ .menu-item:nth-child(6) {
-    transition-duration: 480ms;
-    -webkit-transition-duration: 480ms;
-    -webkit-transform: translate3d(0.08361px, 104.99997px, 0);
-    transform: translate3d(0.08361px, 104.99997px, 0);
- }
-  
- .expandmenu:checked ~ .menu-item:nth-child(7) {
-    transition-duration: 580ms;
-    -webkit-transition-duration: 580ms;
-    -webkit-transform: translate3d(-90.86291px, 52.62064px, 0);
-    transform: translate3d(-90.86291px, 52.62064px, 0);
- }
-  
- .expandmenu:checked ~ .menu-item:nth-child(8) {
-    transition-duration: 680ms;
-    -webkit-transition-duration: 680ms;
-    -webkit-transform: translate3d(-91.03006px, -52.33095px, 0);
-    transform: translate3d(-91.03006px, -52.33095px, 0);
- }
-  
- .expandmenu:checked ~ .menu-item:nth-child(9) {
-    transition-duration: 780ms;
-    -webkit-transition-duration: 780ms;
-    -webkit-transform: translate3d(-0.25084px, -104.9997px, 0);
-    transform: translate3d(-0.25084px, -104.9997px, 0);
- }
-  
- .col1 {
-    background-color: #24BCFC;
-    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
- }
-  
- .col1:hover {
-    color: #24BCFC;
-    text-shadow: none;
- }
-  
- .col2 {
-    background-color: #FF3A3D;
-    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
- }
-  
- .col2:hover {
-    color: #FF3A3D;
-    text-shadow: none;
- }
-  
- .col3 {
-    background-color: #FFC431;
-    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
- }
-  
- .col3:hover {
-    color: #FFC431;
-    text-shadow: none;
- }
-  
- .col4 {
-    background-color: #FF670C;
-    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
- }
-  
- .col4:hover {
-    color: #FF670C;
-    text-shadow: none;
- }
-  
- .col5 {
-    background-color: #35FFD6;
-    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
- }
-  
- .col5:hover {
-    color: #35FFD6;
-    text-shadow: none;
- }
-  
- .col6 {
-    background-color: #0340D0;
-    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
- }
-  
- .col6:hover {
-    color: #0340D0;
-    text-shadow: none;
- }
-  
- @media screen and (max-width: 700px) {
-    body {
-       padding: 170px 0 0 0;
-       width: 100%
-    }
- }
- 
-
-
-
-
-        body, html {
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-.bg-image {
-  /* The image used */
-  background-image: url("Pictures/pngtree-abstract-futuristic-circuit-board-and-high-computer-technology-on-dark-blue-picture-image_1872543.png");
-  
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  
-  /* Full height */
-  height: 100%; 
-  
-  /* Center and scale the image nicely */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("Screenshot\ from\ 2023-01-08\ 17-48-22.png");
+  min-height: 100%;
 }
 
-/* Position text in the middle of the page/image */
-.bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 40%;
-  padding: 20px;
-  text-align: center;
+.bgimg-2 {
+  background-image: url("Pictures/pngtree-abstract-futuristic-circuit-board-and-high-computer-technology-on-dark-blue-picture-image_1872543.png");
+  min-height: 400px;
 }
-       
-       /*********************************
+
+.bgimg-3 {
+  background-image: url("Pictures/home_page.jpeg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/*********************************
+        * home button css 
+        *********************************/
+        #homebtn{
+            width: 50px;
+            height: 30px;
+            border: 2px;
+            color: #e2fa0f;
+            cursor: pointer;
+            position:absolute;
+            left: 30px;
+            top: 20px;
+            background-color: #585858;
+            text-align: center;
+            border-color: #1a0001;
+        }
+        #homebtn:hover{
+            background-color: #1a0001;
+            color: greenyellow;
+        }
+
+        /* about us btn */
+       #aboutbtn
+       {
+        width: 100px;
+        height: 30px;
+        border: 2px;
+        color: #e2fa0f;
+        cursor: pointer;
+        position: fixed;
+        left: 80px;
+        top: 20px;
+        background-color: #585858;
+        text-align: center;
+       }
+       #aboutbtn:hover
+       {
+        background-color: #1a0001;
+        color:greenyellow ;
+       }
+
+        /*********************************
        *  courses btn
        *********************************/
-       .htmlbtn
+       #htmlbtn
        {
         width: 50px;
         height: 30px;
         border: 2px;
-        color: #a70f0e;
+        color: #e2fa0f;
         cursor: pointer;
         left: 180px;
         top: 20px;
-        background-color: #01000e;
+        background-color: #585858;
         position:fixed;
         display: inline-block;
         font-family:Cambria ;
@@ -386,137 +137,71 @@ body {
         font-family:Cambria;
         background-color: #1a0001;
        }
-       
-       
-        /*********************************
-        * home button css 
-        *********************************/
-        #myhomebtn{
-            width: 50px;
-            height: 30px;
-            border: 2px;
-            color: #a70f0e;
-            cursor: pointer;
-            position:fixed;
-            left: 30px;
-            top: 20px;
-            background-color: #010001;
-            text-align: center;
-        }
-        #myhomebtn:hover{
-            background-color: #1a0001;
-            color: greenyellow;
-        }
-   
-/* about us btn */
-       #aboutbtn
-       {
-        width: 100px;
-        height: 30px;
-        border: 2px;
-        color: #a70f0e;
-        cursor: pointer;
-        position: fixed;
-        left: 80px;
-        top: 20px;
-        background-color: #010001;
-        text-align: center;
-       }
-       #aboutbtn:hover
-       {
-        background-color: #1a0001;
-        color:greenyellow ;
-       }
-        </style>
 
-   <script id="script">
-    var s = document.createElement("script")
-    s.src = "https://notix.io/ent/current/enot.min.js"
-    s.onload = function (sdk) {
-        sdk.startInstall({
-            appId: "10056498963c67c6b7900650f84d79f",
-            
-        })
-    }
-    document.head.append(s)
-</script>
-   </head>
-  
-  
-  
-  
-  
-  
-   <body oncontextmenu=" return false;">
-    <div class="bg-image"></div>
-    <button id="myhomebtn" onclick="homefunction()">HOME</button>
-    <button id="aboutbtn" onclick="aboutfuncition()">About us</button>
-    <div class="htmlbtn">
-        <span>
-            C
-        </span>
-        <div class="htmlbtn-ht">
-            <p>
-                <a href="">
-                    Roadmap to matster C
-                </a>
-                <br>
-                <br/>
-                <a href="C/main_page.html" target="_parent">
-                    Starting learning C!
-                </a>
-            </p>
-        </div>
-    </div>
-    <nav class="menu">
-        <input type="checkbox" href="#" class="expandmenu" name="expandmenu" id="expandmenu" />
-        <label class="expandmenu-button" for="expandmenu">
-         <span class="lines first-line"></span>
-         <span class="lines sec-line"></span>
-         <span class="lines third-line"></span>
-       </label>
-      
-        <a href="https://anshsarkar2.github.io/S5AMP.github.io/" target="_parent" class="menu-item col1"> <i class="fas fa-home"></i> </a>
-        <a href="#" class="menu-item col2"> <i class="fas fa-palette"></i> </a>
-        <a href="#" class="menu-item col3"> <i class="fas fa-bell"></i> </a>
-        <a href="https://twitter.com/S5amp" class="menu-item col4"> <i class="fab fa-twitter"></i> </a>
-        <a href="mailto:s5ampmails@gmail.com" class="menu-item col5"> <i class="fas fa-envelope"></i> </a>
-        <a href="https://instagram.com/s5amp2023/" class="menu-item col6"> <i class="fab fa-instagram"></i> </a>
-     </nav>
-    
-    
-    
-    
-   
-    <div class="bg-text">
-       <h1> Welcome! to the world<br>of programming.</h1><br/><br/><br/>
-        <img src="Screenshot from 2023-01-08 17-48-22.png" width="200px" height="200px"/>
-    </div>
-    <a target="_blank" href="https://www.amazon.com/b?_encoding=UTF8&tag=educatio06ea3-20&linkCode=ur2&linkId=c99c9800c4c1d2a98f9bcef2ea0064fa&camp=1789&creative=9325&node=75">Happy shopping and success</a>
-    <script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3' key="69278835-1800-4a3d-a1d9-dfb215d4a5db" ></script>
-  </body>    
-  <iframe src="aboutus.html" width="100%"></iframe>
-    
-    
-    
-    <script>
-        alert("This site is on work currently! PLease visit again till 26th January.")
-        var btn = document.getElementById("myhomebtn")
-       
-       
-       
-       
-        //home btn functon.
-        function homefunction() {
-             alert("hello");
-        }
-       //about us btn funcition.
-        function aboutfuncition(params) {
-            alert("hello");
-        }
-        //html btn function.
-        function htmlfunction(params) {
-            alert("hello");
-        }
-    </script>
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+<body>
+<button id="homebtn">
+   <b>
+      HOME
+   </b>
+</button>
+<button id="aboutbtn">
+   <b>
+      About us
+   </b>
+</button>
+<button id="htmlbtn">
+   <b>
+      C 
+   </b>
+</button>
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">Welcome to <b>S5AMP!</b></span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Parallax Demo</h3>
+  <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">COOL!</span>
+  </div>
+</div>
+
+</body>
 </html>
