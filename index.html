@@ -142,6 +142,12 @@ a {
 button:hover, a:hover {
   opacity: 0.7;
 }
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: scroll;
+  }
+}
 </style>
 </head>
 <body oncontextmenu="return false">
