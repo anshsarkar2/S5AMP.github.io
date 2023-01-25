@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: CEO.jpg
+Disallow: assets/
+Disallow: Chatbot/
+Disallow: Pictures/
+Sitemap: https://anshsarkar2.github.io/S5AMP.github.io/sitemap.xml
