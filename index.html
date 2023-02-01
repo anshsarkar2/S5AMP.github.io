@@ -169,6 +169,23 @@ button:hover, a:hover {
     background-attachment: scroll;
   }
 }
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
 </style>
 
 
@@ -182,6 +199,7 @@ button:hover, a:hover {
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 <div class="bgimg-1">
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href="login.html">Login</a></button>
   <div class="caption">
   <span class="border">Welcome to <b>S5AMP!</b><br/></span>
   </div>
@@ -233,15 +251,16 @@ button:hover, a:hover {
     alert("For connecting to our CEO please message him in Twitter \n or Instagram.")
   }
 
-   /*function check(e)
-    {
-    alert(e.keyCode);
-    }*/
-    document.onkeydown = function(e) {
-            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
-                alert('not allowed');
-            }
-            return false;
-    };
+
+
+    // Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 </script>
 </html>
