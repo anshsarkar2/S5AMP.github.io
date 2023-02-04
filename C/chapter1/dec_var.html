@@ -17,20 +17,456 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WF9PMP6');</script>
     <!-- End Google Tag Manager -->
+    <title>
+        C|Character-Set
+    </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="Screenshot from 2023-01-08 17-48-22.png"/>
         <title>
-            Declaration of variables
+
         </title>
         <style>
             body
             {
-                background-image: linear-gradient(to right,  #1d01e2, #08a880,#1d01e2);
+                background-color: #1c1b22;
             }
+            .h1
+            {
+                color: #f3ba8c;
+                font-size: 80px;
+                font-family: cursive;
+                margin-left: 140px;
+            }
+            .h2-head
+            {
+                color: rgb(9, 32, 163);
+                font-size: 40px;
+                font-family: cursive;
+            }
+            .h2-content
+            {
+                color: #c1be10;
+                font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin-left: 20px;
+            }
+            table, td, th
+            {
+                border: double;
+            }
+            code
+            {
+                font-family: monospace;
+                color: #ddd;
+                font-size:  20px;
+                padding-left: 50px;
+            }
+            #nextpgbtn
+            {
+                margin-left: 900px;
+                width: 100px;
+                height: 50px;
+            }
+            #prevbtn
+            {
+                margin-left: 20px;
+                margin-top: 20px;
+                width: 200px;
+                height: 50px;
+            }
+               /*Top nav bar*/
+.topnav {
+  overflow: hidden;
+  background-color: #ff5400;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #00c99c;
+  color: white;
+}
+
+
+/*Dropdown*/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
         </style>
     </head>
-    <frameset cols="25% , 75%">
-        <frame src="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html"></frame>
-        <frame src="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/dec_var-1.html"></frame>
-    </frameset>
+    <body><!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WF9PMP6"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div class="topnav">
+            <a class="active" href="https://anshsarkar2.github.io/S5AMP.github.io/">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">C
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">C|About it</a>
+                <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html">C|Contents</a>
+                <a href="#">C|History</a>
+                <a href="#">C|Uses</a>
+              </div>
+            </div> 
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </div>
+        <hr color="#000000" width="80%">
+        <div class="h1">
+            Declaration Of Variables
+        </div>
+        <hr color="#000000" width="80%">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+            <p style="color: #c1be10;">
+                After declaring suitable variable names, we must declare them to the compiler. <br/>
+                Declaration does two things:<br>
+                <ul>
+                    <li style="color: #c1be10;">
+                        It tells the compiler what the variable name is.
+                    </li>
+                    <li style="color: #c1be10;">
+                        It specifies what type of data the variable will hold.
+                    </li>
+                </ul>
+<p style="color: #c1be10;">                The declaration of variables must be done before they are used in the program.</p>
+            </p>
+            <div class="h2-head">
+               <u><b> Primary Type Declaration</b></u>
+            </div>
+            <div class="h2-content">
+                A variable can be used to store a value of any data type. That is, the name has <br/>
+                nothing to do with it's type. THe syntax for declaring a variable is as follows:
+                <table style="border: 5px;" width="50%">
+                    <tr>
+                        <th>
+                            <b>data-type v1,v2,...vn ;</b>
+                        </th>
+                    </tr>
+                </table>
+                v1, v2, ...vn are the names of variables. Variables are seprated by commas.<br/>
+                A declaration statement must end with a semicolon.<br/>
+                For example, valid declaration are:
+                  <code>
+                    <br/>
+                    <b>int</b> count;
+                    <br/>
+                    <b>int</b> number, total;
+                    <br/>
+                    <b>double</b> ratio;
+                  </code>
+                  <br/>
+                <b>int</b> and <b>double</b> are the keywords to represent integer type and real<br/>
+                type data values respectively. 
+                <table>
+                    <tr>
+                        <th>
+                            Data Type
+                        </th>
+                        <th>
+                            Keyword equivalent
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Character 
+                        </td>
+                        <td>
+                            char 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Unsigned character
+                        </td>
+                        <td>
+                            unsigned char 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Signed character
+                        </td>
+                        <td>
+                            signed char 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Signed integer
+                        </td>
+                        <td>
+                            signed int
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                             Signed short integer
+                        </td>
+                        <td>
+                            signed short int
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Signed long integer
+                        </td>
+                        <td>
+                            signed long int
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Unsigned integer
+                        </td>
+                        <td>
+                            unsigned int
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            unsigned short integer
+                        </td>
+                        <td>
+                            unsigned short int
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Unsigned long integer
+                        </td>
+                        <td>
+                            unsigned long int
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Floating point
+                        </td>
+                        <td>
+                            float
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Double-precision floating point 
+                        </td>
+                        <td>
+                            double
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Extended double-precision floating point 
+                        </td>
+                        <td>
+                            long double
+                        </td>
+                    </tr>
+                </table>  
+                <br/>
+                <b>main( )</b> is the beginning of the program. The opening braces <b>{</b> signals the execution<br/>
+                of the program. Declaration of the variable is usally done after the opening braces. <br/>
+                Sometimes variables can also be declared outside the main. <br/>
+                <table width="100%">
+                    <tr>
+                        <th>
+                            <b>
+                                <u>
+                                    Declaration of variables
+                                </u>
+                            </b>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>
+                                main()  /*****************Program Name*****************/
+                                <br/>
+                                {
+                                    <br>
+                                    /*************Declaration*******************/<br/>
+                                    float x,y;<br/>
+                                    int code;<br/>
+                                    short int  count;<br/>
+                                    long int amount;<br/>
+                                    double deviation;<br/>
+                                    unsigned int n;<br/>
+                                    char c;<br>
+                                    /****************Computation*********************/<br/>
+                                     . . . . <br/>
+                                     . . . . <br/>
+                                     . . . . <br/>
+                                }   /************Program Ends***********************/ 
+                            </code>
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    When an qualifier <b>short</b>, <b>long</b>, or <b>unsigned</b> is used without basic<br/>
+                    type specifier, C compilers treat data types as an <b>int</b>. If we want to use the<br/>
+                    specific type we have to define it to the compiler.
+                </p>   
+            </div>
+            <div class="h2-head">
+                <b><u>User-defined Type declaration</u></b>
+            </div>
+            <div class="h2-content">
+                C suppourts a feature known as "type defination" that allows users to define an identifier<br/>
+                that would represent an existing data type. The user defined data type identifier can later<br/>
+                be used to declare variables. It takes the Genral Form:<br/>
+                <table>
+                    <tr>
+                        <th>
+                            typedef <code>type identifier;</code>
+                        </th>
+                    </tr>
+                </table>
+                <p>
+                    Where type refers to an existing data types and identifiers refer to the new  name<br/>
+                    given to the data type. THe existing data type may belong to any class of type, <br/>
+                    including the user defined ones. Remember that the new type is 'new' only in name <br/>
+                    but not the data type. <b>typedef</b> cannot create a new type. <br/>
+                    Some examples of type defination are:<br/>
+                    <code>
+                        <b>typedef int</b> units;<br/>
+                        <b>typedef float</b> marks;<br/> 
+                    </code> 
+                </p>
+                <p>
+                    Here, units symbolizes <b>int</b> and <b>mark</b> symbolizes <b>float</b>.<br/>
+                    THey can be later used to declare variable as follows:<br/>
+                    <code>
+                        <b>units</b> batch1 , batch2;<br/>
+                        <b>marks</b> name1[50], name2[50];<br/>
+                    </code>
+                </p>
+                <p>
+                    batch1 and batch2 are inclared as <b>int</b> variable and name1[50] and name2[50]<br/>
+                    declared as 50 elements floating point array variables. The main advantage of <b>typedef</b><br/>
+                    is that we can create meaningful data type names for increasing the readiblity of the program.<br>
+                    Another user-defined data type is enumerated data type provided by ANSI standard.<br/>
+                    It is defined as follows:
+                    <table>
+                        <code>
+                            <b>enum identifier{value1,value2,...valuen};</b>
+                        </code>
+                    </table>
+                </p>
+                <p>
+                    THe "identifier" is  a user-defined enumerated  data type which can be used to declare<br/>
+                    variables that can have one of the values enclosed within the braces (known as <br/>
+                    enumeration constants). After this defination, we can declare variables to be of this<br/>
+                    new type as below:<br>
+                    <code><b>enum</b> identifier v1, v1, ...vn; </code>
+                    <br/>
+                    The enumerated variables v1, v2, vn can only have on the values value1, value2, ...valuen.<br/>
+                    THe assignments of the following type are valid:<br/>
+                    <code>
+                        v1 = value3;<br>
+                        v5 = value1;
+                    </code><br/>
+                    An Example:<br/>
+                    <code>
+                        <b>enum day</b> {Monday,Tuesday,...Sunday};<br/>
+                        <b>enum day</b> week_st, week_end;<br/>
+                        week_st = Monday;<br/>
+                        week_end = Friday;<br/>
+                        if(week_st == Tuesday)
+                        week_end = Saturday;
+                    </code>
+                </p>
+                <p>
+                    THe compiler automatically assigns integer digits beginning with 0 to all enumeration <br/>
+                    constants. That is, the enumeration constant value1 is assigned 0, value2 is assigned 1, and<br/>
+                    so on. However, the automatic assignments can be overridden by assigning values explicitly<br/>
+                    to the enumeration constants. For example:
+                    <code>
+                        <b>enum day</b>{Monday = 1, Tuesday, ...Sunday};
+                    </code>
+                </p>
+                <p>
+                    Here the constant Monday is assigned the value of 1. The remaining constants are as signed <br/>
+                    values that increases successively by 1.
+                </p>
+                <p>
+                    THe defination and declaration of enumerated variables can be combined in one statement.<br>
+                    For Example:<br/>
+                    <code>
+                        enum day {Monday, ...Sunday} week_st, week_end;
+                    </code>
+                </p>
+            </div>
+            <hr color="#000000" width="80%">
+            <br/>
+            <br/>
+            <button id="prevbtn">
+                Previous page
+            </button>
+            <button id="nextpgbtn">
+                <a href="dec_sto_cla.html" target="_parent">
+                    Next page
+                </a>
+            </button>
+            <script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3' key="69278835-1800-4a3d-a1d9-dfb215d4a5db" ></script>
+    </body>
 </html>
