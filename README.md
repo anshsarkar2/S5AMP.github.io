@@ -1,5 +1,5 @@
 # S5AMP.github.io
-Welcome to the C Programming Hub!
+Welcome to the S5AMP!
 
 We're here to help you learn the ins and outs of C programming and take your skills to the next level. Our website is designed for both beginners and experienced programmers, with a variety of resources available to suit your needs.
 What We Offer
