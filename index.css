@@ -7,7 +7,7 @@ body, html {
   
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     position: relative;
-    opacity: 100;
+    opacity: 10;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,6 +17,7 @@ body, html {
   .bgimg-1 {
     background-image: url("Screenshot\ from\ 2023-01-08\ 17-48-22.png");
     min-height: 100%;
+    -webkit-filter: blur(20px);
   }
   .bgimg-4{
     background-image: url("Pictures/High_resolution_wallpaper_background_ID_77700336308.jpg");
@@ -154,4 +155,43 @@ body, html {
   button:hover {
     opacity: 0.8;
   }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*********************
+  *****Working Time*****
+  *********************/
+  .bgtst1
+  {
+    background-image: url("Pictures/futo.jpg");
+    min-height: 100%;
+    -webkit-filter: blur(0px);
+  }
+  .bgtst1{
+    position: relative;
+    opacity: 10;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
