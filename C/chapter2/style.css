@@ -84,3 +84,12 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+
+
+
+cursive
+{
+  font-style: italic;
+  font-family: cursive;
+}

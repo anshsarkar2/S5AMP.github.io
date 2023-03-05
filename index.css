@@ -17,7 +17,6 @@ body, html {
   .bgimg-1 {
     background-image: url("Screenshot\ from\ 2023-01-08\ 17-48-22.png");
     min-height: 100%;
-    -webkit-filter: blur(20px);
   }
   .bgimg-4{
     background-image: url("Pictures/High_resolution_wallpaper_background_ID_77700336308.jpg");
@@ -185,7 +184,6 @@ body, html {
   {
     background-image: url("Pictures/futo.jpg");
     min-height: 100%;
-    -webkit-filter: blur(0px);
   }
   .bgtst1{
     position: relative;
