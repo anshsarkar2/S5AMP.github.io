@@ -1,0 +1,128 @@
+body, html
+{
+    background-image:  url("backv.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1390px 700px;
+}
+.content1{
+    background-size: 20000px 368px;
+    background-color: #004382;
+
+}
+.subcontent1{
+    background-color: #004382;
+    background-size: 10000px 1000px;
+    background-repeat: no-repeat;
+}
+.content2{
+    background-size: 20000px 368px;
+    background-color: #9e1420;
+}
+.subcontent2{
+    background-size: 10000px 1000px ;
+    background-color: #9e1420;
+}
+
+.content0
+{
+    font-family: MADE Gentle;
+    font-size: 400px;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 80px;
+}
+.content1
+{
+    font-size: 40px;
+    color: #000000;
+    padding-top: 150px;
+    text-align: right;
+    flood-opacity: 90%;
+    font-family:cursive;
+    padding-right: 20px;
+}
+.subcontent1
+{
+    font-size: 20px;
+    text-align: right;
+    color: #f2f2f2;
+    padding-right: 20px;
+}
+.content2
+{
+    font-size: 40px;
+    color: #000000;
+    top: 500px;
+    text-align: left;
+    padding-left: 50px;
+    flood-opacity: 90%;
+    font-family: cursive;
+    padding-left: 20px;
+
+}
+.subcontent2
+{
+    font-size: 20px;
+    text-align: left;
+    color: #f2f2f2;
+    padding-left: 20px;
+}
+.content3
+{
+    font-size: 40px;
+    color: #000000;
+    top: 800px;
+    text-align: right;
+    padding-right: 50px;
+    flood-opacity: 90%;
+    font-family: cursive;
+    background-color: #C25200;
+    padding-right: 20px;
+}
+.subcontent3
+{
+    font-size: 20px;
+    color: #f2f2f2;
+    text-align: right;
+    background-color: #C25200;
+    padding-right: 20px;
+}
+
+#homebtn
+{
+    width: 50px;
+    height: 30px;
+    border: 2px;
+    color: #d42328;
+    cursor:pointer ;
+    position: relative;
+    left: 10px;
+    top: 50px;
+    background-color: #040404;
+}
+#homebtn:hover
+{
+    background-color: #2d2d2f;
+    cursor: pointer;
+}
+#aboutusbtn 
+{
+    width: 80px;
+    height: 30px;
+    border: 2px;
+    color: #d42328;
+    cursor: pointer;
+    position: relative;
+    left: 20px;
+    top: 50px;
+    background-color: #040404;
+}
+#aboutusbtn:hover
+{
+    background-color: #2d2d2f;
+    cursor: pointer;
+}
+.a1
+{
+    color: #d42328;
+}
