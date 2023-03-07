@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K55T09XE1W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K55T09XE1W');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WF9PMP6');</script>
+    <!-- End Google Tag Manager -->
+        <title>
+            Arthemetic Operator
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="https://anshsarkar2.github.io/S5AMP.github.io/">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">C
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">C|About it</a>
+                <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html">C|Contents</a>
+                <a href="#">C|History</a>
+                <a href="#">C|Uses</a>
+              </div>
+            </div> 
+            <a onclick="Contact()">Contact</a>
+            <a onclick="About()">About</a>
+          </div>
+        <p id="arthe_ope">
+            <b>
+              <i>
+                <u>
+                  <h3>
+                    Arthematic Operator
+                  </h3>
+                </u>
+              </i>
+            </b>
+            <p>
+              C provides some basic arthematic Operatrs, Which are given in the table 3.1 or below,
+              <table id="3.1" style="border: 5px solid;border-color: aqua;">
+                <caption>
+                  Table 3.1 Arthematic operators
+                </caption>
+                <tr>
+                  <th>
+                    <b>
+                      Operators
+                    </b>
+                  </th>
+                  <th>
+                    <b>
+                      Meanings
+                    </b>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    +
+                  </td>
+                  <td>
+                    Addition or unary plus
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    -
+                  </td>
+                  <td>
+                    Subtraction or unary minus
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    *
+                  </td>
+                  <td>
+                    Multiplication
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    /
+                  </td>
+                  <td>
+                    Division
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    %
+                  </td>
+                  <td>
+                    Modulo division
+                  </td>
+                </tr>
+              </table>
+              <br>
+              Arthematic Operators are also divided into 3 types,
+              <ol>
+                <li>
+                  <dl>
+                    <dt>
+                      Integer Arthemetic
+                    </dt>
+                    <dd>
+                      When both the operands in a single arithmetic expression such as <b>a+b</b> are integers, the expression is called an <cursive>integer expression</cursive>, <br/>
+                      and the operation is called <cursive>integer arithmetic</cursive>. <a href="#inte_arith">click here for more about it....</a>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>
+                      Real arithmetic
+                    </dt>
+                    <dd>
+                      An arithmetic operation involving only real operands is called <cursive>real numbers</cursive>.<a href="#real_arith">click here for more about it</a>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>
+                      Mixed-Mode Arithmetic
+                    </dt>
+                    <dd>
+                      When one of the operand is real and the other is integer, the expression is called as <cursive>mixed-mode arithmetic</cursive>.<a href="#mix_mod_arith">Click here to know more about it..</a>
+                    </dd>
+                  </dl>
+                </li>
+              </ol>
+            </p>
+          </p>
+        </div>
+        <div style="color: aliceblue; padding: 20px;">
+          <p id="inte_arith">
+            <dl>
+              <dt style="font-size: x-large; font-weight: 700;">
+                Integer Arithmetic
+              </dt>
+              <dd>
+                <p>
+                  Integer arithmetic is a fundamental aspect of programming, and it is crucial for software<br/>
+                  developers to have a good understanding of it. In C programming language, integer arithmetic <br/>
+                  involves performing mathematical operations on integers, which are whole numbers that can be <br>
+                  positive, negative, or zero. In this article, we will discuss the theory, concepts, and <br>
+                  applications of integer arithmetic in C programming language.
+                </p>
+                <p>
+                  <dl>
+                    <dt style="font-size: medium;">
+                      Theory and Concepts of Integer Arithmetic
+                    </dt>
+                    <dd>
+                      <p>
+                        In C programming language, there are several operators that can be used to perform integer <br>
+                        arithmetic operations. These operators include the addition (+), subtraction (-), multiplication (*),<br>       
+                        division (/), and modulo (%). The addition and subtraction operators are used to perform basic <br>
+                        arithmetic operations, while the multiplication and division operators are used to perform more <br>
+                        complex operations. The modulo operator is used to find the remainder of a division operation.
+                      </p>
+                      <p>
+                        One important concept in integer arithmetic is the concept of overflow. Overflow occurs when the <br/>
+                        result of an arithmetic operation exceeds the maximum value that can be represented by the data <br>
+                        type. For example, if we add two integers that are close to the maximum value that can be represented <br>
+                        by an int data type, the result may exceed the maximum value, and overflow will occur. Overflow can <br>
+                        lead to unexpected results, and it is important to be aware of it when performing integer arithmetic operations.
+                      </p>
+                      <p>
+                        Another important concept in integer arithmetic is the concept of type casting. Type casting is the <br/>
+                        process of converting one data type to another. For example, if we have two integers and we want to <br>
+                        divide them, we may need to cast them to a floating-point data type to get an accurate result.
+                      </p>
+                    </dd>
+                  </dl>
+                </p>
+                <p>
+                  <dl>
+                    <dt>
+                      Applications of Integer Arithmetic
+                    </dt>
+                    <dd>
+                      <p>
+                        Integer arithmetic is used in many applications, including finance, physics, and computer graphics. <br>
+                        In finance, integer arithmetic is used to perform calculations such as interest rates and compound <br>
+                        interest. In physics, integer arithmetic is used to perform calculations such as force, acceleration, <br>
+                        and velocity. In computer graphics, integer arithmetic is used to perform calculations such as image <br>
+                        compression and color manipulation.
+                      </p>
+                      <p>
+                        Integer arithmetic is also used in many programming tasks, such as sorting algorithms and data structures. <br>
+                        For example, the quicksort algorithm uses integer arithmetic to sort a list of integers. The binary search <br>
+                        algorithm also uses integer arithmetic to search for a specific value in a sorted list.
+                      </p>
+                    </dd>
+                  </dl>
+                </p>
+                <p>
+                  <dl>
+                    <dt>
+                      Conclusion
+                    </dt>
+                    <dd>
+                      <p>
+                        In conclusion, integer arithmetic is a fundamental aspect of programming, and it is crucial for software developers <br>
+                        to have a good understanding of it. In C programming language, integer arithmetic involves performing mathematical <br>
+                        operations on integers using operators such as addition, subtraction, multiplication, division, and modulo. It is <br>
+                        important to be aware of concepts such as overflow and type casting when performing integer arithmetic operations. <br>
+                        Integer arithmetic is used in many applications, including finance, physics, and computer graphics, and it is <br>
+                        also used in many programming tasks, such as sorting algorithms and data structures.
+                      </p>
+                    </dd>
+                  </dl>
+                </p>
+              </dd>
+            </dl>
+          </p>
+        </div>
+        <div style="color: antiquewhite; padding: 20px;" id="real_arith"> 
+          <p>
+            <dl>
+              <dt style="font-size: x-large;"> 
+                Real Arithmetic
+              </dt>
+              <dd>
+                <p>
+                  Real arithmetic is another fundamental aspect of programming, and it is crucial for software developers to have a good <br>
+                  understanding of it. In C programming language, real arithmetic involves performing mathematical operations on real numbers, <br>
+                  which can be positive, negative, or zero, and can have fractional parts. In this article, we will discuss the theory, c<br>
+                  and applications of real arithmetic in C programming language.
+                </p>
+                <p>
+                  <dl>
+                    <dt>
+                      Theory and Concepts of Real Arithmetic
+                    </dt>
+                    <dd>
+                      <p>
+                        In C programming language, real arithmetic involves using floating-point data types to represent real numbers. <br>
+                        The most commonly used floating-point data types are float and double. The float data type is a 32-bit floating-point <br>
+                        number, while the double data type is a 64-bit floating-point number. Real arithmetic operations in C programming <br>
+                        language include addition (+), subtraction (-), multiplication (*), division (/), and exponentiation (pow() function).
+                      </p>
+                      <p>
+                        One important concept in real arithmetic is the concept of rounding errors. Rounding errors occur because floating-point <br>
+                        numbers can only represent a finite number of digits. As a result, some numbers cannot be represented exactly, and rounding <br>
+                        errors can occur when performing arithmetic operations. Rounding errors can accumulate over multiple operations, leading to <br>
+                        inaccuracies in the final result. It is important to be aware of rounding errors when performing real arithmetic operations.
+                      </p>
+                      <p>
+                        Another important concept in real arithmetic is the concept of precision. Precision refers to the number of digits that <br>
+                        can be represented by a floating-point number. The precision of a floating-point number depends on the data type used to <br>
+                        represent it. The float data type has a precision of approximately 7 digits, while the double data type has a precision of <br>
+                        approximately 15 digits.
+                      </p>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      Applications of Real Arithmetic
+                    </dt>
+                    <dd>
+                      <p>
+                        Real arithmetic is used in many applications, including finance, physics, and computer graphics. In finance, real arithmetic <br>
+                        is used to perform calculations such as present value, future value, and compound interest. In physics, real arithmetic is <br>
+                        used to perform calculations such as distance, velocity, and acceleration. In computer graphics, real arithmetic is used to <br>
+                        perform calculations such as 3D transformations and lighting calculations.
+                      </p>
+                      <p>
+                        Real arithmetic is also used in many programming tasks, such as numerical analysis and simulation. For example, the Runge-Kutta <br>
+                        method for solving differential equations uses real arithmetic to approximate the solution at each step. The Monte Carlo method <br>
+                        for simulating complex systems also uses real arithmetic to generate random numbers.
+                      </p>
+                    </dd>  
+                  </dl>
+                  <dl>
+                    <dt>
+                      Conclusion
+                    </dt>
+                    <dd>
+                      <p>
+                         In conclusion, real arithmetic is a fundamental aspect of programming, and it is crucial for software developers to have a good understanding <br>
+                         of it. In C programming language, real arithmetic involves using floating-point data types to represent real numbers and performing arithmetic <br>
+                         operations using operators such as addition, subtraction, multiplication, division, and exponentiation. It is important to be aware of concepts <br>
+                         such as rounding errors and precision when performing real arithmetic operations. Real arithmetic is used in many applications, including finance, <br>
+                         physics, and computer graphics, and it is also used in many programming tasks, such as numerical analysis and simulation.
+                       </p>   
+                    </dd>
+                  </dl>
+                </p>
+              </dd>
+            </dl>
+          </p>
+        </div>
+        <div style="padding: 20px; color: antiquewhite;">
+          <p id="mix_mod_arith">
+            <dl>
+              <dt style="font-size: x-large;">
+                Mixed-Mode Arithmetic
+              </dt>
+              <dd>
+                <p>
+                  Mixed mode arithmetic is a type of arithmetic that involves performing mathematical operations on a combination of different data types such as integers,<br/>
+                  real numbers, and complex numbers. In programming, mixed mode arithmetic is often used in scientific and engineering calculations where different data types <br>
+                  need to be combined to perform complex calculations. In this article, we will discuss the theory, concepts, and applications of mixed mode arithmetic in C programming language.
+                </p>
+                <p>
+                  <dl>
+                    <dt>
+                      Theory and Concepts of Mixed Mode Arithmetic
+                    </dt>
+                    <dd>
+                      <p>
+                        In mixed mode arithmetic, different data types such as integers, real numbers, and complex numbers are involved in mathematical operations. In C programming language, <br>
+                        integers are represented by data types such as int, long, and long long. Real numbers are represented by floating-point data types such as float and double. Complex numbers <br>
+                        are represented by a structure data type that contains both real and imaginary parts.
+                      </p>
+                      <p>
+                        Mixed mode arithmetic operations in C programming language include addition, subtraction, multiplication, division, and exponentiation. When performing mixed mode arithmetic <br>
+                        operations, it is important to ensure that the data types are compatible. For example, when adding an integer and a floating-point number, the integer needs to be converted to <br>
+                        a floating-point number before performing the addition.
+                      </p>
+                      <p>
+                        Another important concept in mixed mode arithmetic is the concept of precision. Precision refers to the number of digits that can be represented by a floating-point number or a <br>
+                        complex number. The precision of a floating-point number depends on the data type used to represent it. The precision of a complex number depends on the precision of the real and <br>
+                        imaginary parts.
+                      </p>
+                    </dd>
+                  </dl>
+                </p>
+                <p>
+                  <dl>
+                    <dt>
+                      Applications of Mixed Mode Arithmetic
+                    </dt>
+                    <dd>
+                      <p>
+                        Mixed mode arithmetic is used in many applications, especially in scientific and engineering calculations. In physics, mixed mode arithmetic is used to perform calculations such as <br>
+                        force, momentum, and energy. In electrical engineering, mixed mode arithmetic is used to perform calculations such as impedance, voltage, and current. In chemistry, mixed mode arithmetic <br>
+                        is used to perform calculations such as molecular bonding and reaction kinetics.
+                      </p>
+                      <p>
+                        Mixed mode arithmetic is also used in many programming tasks, such as signal processing and numerical methods. For example, the Fourier transform is a mathematical technique used in signal <br>
+                        processing that involves complex numbers. The numerical integration method is a technique used in numerical analysis that involves both integers and real numbers.
+                      </p>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      Conclusion
+                    </dt>
+                    <dd>
+                      <p>
+                        In conclusion, mixed mode arithmetic is a fundamental aspect of programming, especially in scientific and engineering applications. In C programming language, mixed mode arithmetic involves <br>
+                        performing mathematical operations on a combination of different data types such as integers, real numbers, and complex numbers. It is important to ensure that the data types are compatible <br>
+                        when performing mixed mode arithmetic operations. Mixed mode arithmetic is used in many applications, such as physics, electrical engineering, and chemistry, and it is also used in many <br>
+                        programming tasks, such as signal processing and numerical methods.
+                      </p>
+                    </dd>
+                  </dl>
+                </p>
+              </dd>
+            </dl>
+          </p>
+        </div> 
+    </body>
+</html>
