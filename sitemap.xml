@@ -4,7 +4,6 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
@@ -28,19 +27,9 @@
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/start-1.html</loc>
-  <lastmod>2023-01-23T12:37:42+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
   <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/execut.html</loc>
   <lastmod>2023-01-23T12:37:42+00:00</lastmod>
   <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/execut-1.html</loc>
-  <lastmod>2023-01-23T12:37:42+00:00</lastmod>
-  <priority>0.33</priority>
 </url>
 <url>
   <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/characterset.html</loc>
@@ -48,19 +37,9 @@
   <priority>0.26</priority>
 </url>
 <url>
-  <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/characterset1.html</loc>
-  <lastmod>2023-01-23T12:37:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
   <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/co_var_key.html</loc>
   <lastmod>2023-01-23T12:37:42+00:00</lastmod>
   <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/co_var_key-1.html</loc>
-  <lastmod>2023-01-23T12:37:42+00:00</lastmod>
-  <priority>0.13</priority>
 </url>
 <url>
   <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/dec_var.html</loc>
@@ -68,27 +47,12 @@
   <priority>0.11</priority>
 </url>
 <url>
-  <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/dec_var-1.html</loc>
-  <lastmod>2023-01-23T12:37:42+00:00</lastmod>
-  <priority>0.09</priority>
-</url>
-<url>
   <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/dec_sto_cla.html</loc>
   <lastmod>2023-01-23T12:37:42+00:00</lastmod>
   <priority>0.07</priority>
 </url>
 <url>
-  <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/dec_sto_cla-1.html</loc>
-  <lastmod>2023-01-23T12:37:42+00:00</lastmod>
-  <priority>0.05</priority>
-</url>
-<url>
   <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/ass_val_var.html</loc>
-  <lastmod>2023-01-23T12:37:42+00:00</lastmod>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/ass_val_var-1.html</loc>
   <lastmod>2023-01-23T12:37:42+00:00</lastmod>
   <priority>0.04</priority>
 </url>
@@ -98,27 +62,12 @@
   <priority>0.03</priority>
 </url>
 <url>
-  <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/def_sym_cont-1.html</loc>
-  <lastmod>2023-01-23T12:37:42+00:00</lastmod>
-  <priority>0.02</priority>
-</url>
-<url>
   <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/dec_a_var_as_con.html</loc>
   <lastmod>2023-01-23T12:37:42+00:00</lastmod>
   <priority>0.02</priority>
 </url>
 <url>
-  <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/dec_a_var_as_con-1.html</loc>
-  <lastmod>2023-01-23T12:37:42+00:00</lastmod>
-  <priority>0.01</priority>
-</url>
-<url>
   <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/Dec_a_var_as_vol.html</loc>
-  <lastmod>2023-01-23T12:37:42+00:00</lastmod>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>https://anshsarkar2.github.io/S5AMP.github.io/C/chapter1/Dec_a_var_as_vol-1.html</loc>
   <lastmod>2023-01-23T12:37:42+00:00</lastmod>
   <priority>0.01</priority>
 </url>
