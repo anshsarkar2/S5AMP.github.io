@@ -12,6 +12,26 @@ body {
   {
     font-size: 20px;
   }
+  dt
+  {
+    font-weight: 1000;
+    font-size: x-large;
+  }
+  #btn_arth
+  {
+    background-color: #1c1b22;
+    color: #ff5400;
+    font-size: large;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border: #ff5400;
+    border-radius: 5px;
+  }
+  #btn_arth:active
+  {
+    color: #ff5400;
+  }
   /*Top nav bar*/
   .topnav {
     overflow: hidden;
