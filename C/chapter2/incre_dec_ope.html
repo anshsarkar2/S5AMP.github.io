@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Increment and decrement Operator
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Favicon starting -->
+<link rel="apple-touch-icon" sizes="57x57" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-16x16.png">
+<link rel="manifest" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--Favicon end-->
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="https://anshsarkar2.github.io/S5AMP.github.io/">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">C
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">C|About it</a>
+                <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html">C|Contents</a>
+                <a href="#">C|History</a>
+                <a href="#">C|Uses</a>
+              </div>
+            </div> 
+            <a onclick="Contact()">Contact</a>
+            <a onclick="About()">About</a>
+          </div>
+          <h1>
+            <b>
+                <u>
+                    Increment and Decrement Operators
+                </u>
+            </b>
+          </h1>
+        <p>
+            Increment and decrement operators are unary operators in C programming language that are used to increase or decrease the value <br/>
+            of a variable by 1. The increment operator is denoted by "++", and the decrement operator is denoted by "--".
+        </p>
+        <p>
+            These operators can be used both in prefix and postfix forms. The prefix form of the increment operator (++x) first increments <br/>
+            the value of x and then uses the updated value in the expression. For example:<br/>
+            <code>
+                int x = 5;<br/>
+                int y = ++x;
+            </code><br/>
+            In this example, x is first incremented to 6, and then assigned to y. Therefore, y will have a value of 6.
+        </p>
+        <p>
+            The postfix form of the increment operator (x++) uses the value of x in the expression, and then increments the value of x afterwards.<br/>
+            For example:<br/>
+            <code>
+                int x = 5;<br/>
+                int y = x++;<br/>
+            </code>
+            In this example, x is first assigned to y, and then incremented to 6. Therefore, y will have a value of 5.
+        </p>
+        <p>
+            Similarly, the decrement operator can be used in prefix and postfix forms. The prefix form (--x) first decrements the value of x and <br/>
+            then uses the updated value in the expression, while the postfix form (x--) uses the value of x in the expression and then decrements <br/>
+            the value of x afterwards.
+        </p>
+        <p>
+            The increment and decrement operators can also be used in compound assignments, such as += and -=. For example:<br/>
+            <code>
+                int x = 5;<br/>
+                x += 2; <codesnipets>//equivalent to x = x+2</codesnipets> <br/>
+                x --;<codesnipets> //equivalent to x= x-1;</codesnipets>
+            </code>
+        </p>
+        <p>
+            It is important to use these operators with caution, as they can lead to unexpected results if used incorrectly. For example, <br/>
+            using the increment operator twice in the same statement can lead to undefined behavior. Additionally, these operators should <br/>
+            not be used on variables that have not been initialized, as this can also lead to undefined behavior.
+        </p>
+        <p>
+            Understanding the proper usage of the increment and decrement operators is important for programming in C, especially for loops <br/>
+            and other situations where you need to manipulate the value of a variable.
+        </p>
+        <button id="btn_arth">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/index.html">
+                Go back to where you left <:--)
+            </a>
+        </button>
+    </body>
+</html>
