@@ -129,3 +129,24 @@ codesnipets
   color: cadetblue;
   font-weight: 300;
 }
+#mybtn_s1
+{
+  background-color: #1c1b22;
+  color: #ff5400;
+  font-size: large;
+  width: 49%;
+  height: 50px;
+  cursor: pointer;
+ 
+}
+#mybtn_s2
+{
+  background-color: #1c1b22;
+  color: #ff5400;
+  font-size: large;
+  width: 49%;
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+  padding-left: 2%;
+}
