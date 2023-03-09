@@ -114,3 +114,13 @@ cursive
   font-family: cursive;
   color: antiquewhite;
 }
+body
+{
+  color: antiquewhite;
+  padding-left: 1px;
+}
+code
+{
+  font-weight: 800;
+  color: #ff5400;
+}

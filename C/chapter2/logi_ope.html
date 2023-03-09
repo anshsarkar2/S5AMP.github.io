@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="English">
+    <head>
+        <title>
+            Logical Operator
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="robots" content="follow,index">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Favicon starting -->
+<link rel="apple-touch-icon" sizes="57x57" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-16x16.png">
+<link rel="manifest" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--Favicon end-->
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="https://anshsarkar2.github.io/S5AMP.github.io/">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">C
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">C|About it</a>
+                <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html">C|Contents</a>
+                <a href="#">C|History</a>
+                <a href="#">C|Uses</a>
+              </div>
+            </div> 
+            <a onclick="Contact()">Contact</a>
+            <a onclick="About()">About</a>
+          </div>
+          <p>
+            In C programming, logical operators are used to combine multiple relational expressions to form a more complex <br/>
+            expression. Logical operators operate on Boolean values (true or false) and return a Boolean value. There are <br/>
+            three logical operators in C: && (logical AND), || (logical OR), and ! (logical NOT).
+          </p>
+          <ol>
+            <li>
+                <dl>
+                    <dt>
+                        Logical AND (&&): 
+                    </dt>
+                    <dd>
+                        <p>
+                            The logical AND operator returns true if and only if both operands are true; otherwise, it returns <br/>
+                            false. The syntax for logical AND is:<br/>
+                            <code>expression1 && expression2</code>
+                        </p>
+                        <p>
+                            <dl>
+                                <dt>
+                                    Example:
+                                </dt>
+                                <dd>
+                                    <code>
+                                        if(a > 0 && b < 10) { // do something }
+                                    </code><br/>
+                                    <p>
+                                        In this example, if the value of variable 'a' is greater than zero AND the value of variable <br/>
+                                        'b' is less than ten, then the statement inside the curly braces will be executed.
+                                    </p>
+                                    <p>
+                                        Real-life example: In a security system, a door may require two inputs to be true in order to unlock <br/>
+                                        the door. For example, a user may need to enter a password AND swipe a security card to gain access.
+                                    </p>
+                                </dd>
+                            </dl>
+                        </p>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        Logical OR (||):
+                    </dt>
+                    <dd>
+                        <p>
+                         The logical OR operator returns true if at least one of the operands is true; otherwise, it returns false. The syntax <br/>
+                         for logical OR is:</p>
+                        <code>
+                            expression1||expression2
+                        </code>
+                        <p>
+                            <dl>
+                                <dt>
+                                    Example:
+                                </dt>
+                                <dd>
+                                    <code>
+                                        if(x < 0 || y > 10) { // do something }
+                                    </code>
+                                    <p>
+                                        In this example, if the value of variable 'x' is less than zero OR the value of variable 'y' is greater than <br>
+                                        ten, then the statement inside the curly braces will be executed.
+                                    </p>
+                                    <dl>
+                                        <dt>
+                                            Real life examples:
+                                        </dt>
+                                        <dd>
+                                            A store may offer a discount if a customer is a senior citizen OR a student. The customer only needs to meet <br/>
+                                            one of the conditions to receive the discount.
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
+                        </p>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        Logical NOT (!):
+                    </dt>
+                    <dd>
+                        <p>
+                            The logical NOT operator reverses the truth value of an expression. If the expression is true, it returns false; if the expression <br/>
+                            is false, it returns true. The syntax for logical NOT is:
+                        </p>
+                        <code>
+                            !expression
+                        </code>
+                        <dl>
+                            <dt>
+                                Example:
+                            </dt>
+                            <dd>
+                                <code>
+                                    if(!(a == b)) { // do something }
+                                </code>
+                                <p>
+                                    In this example, if the value of variable 'a' is NOT equal to the value of variable 'b', then the statement inside the curly braces <br/>
+                                    will be executed.
+                                </p>
+                            </dd>
+                            <dt>
+                                Real life example:
+                            </dt>
+                            <dd>
+                                In a rental agreement, a tenant may be required to pay a security deposit that will be returned at the end of the lease term. The landlord <br/>
+                                may state that the security deposit will be returned IF there is no damage to the property. The logical NOT operator can be used to express <br/>
+                                this as: "The security deposit will NOT be returned IF there is damage to the property."
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        Short-circuit evaluation
+                    </dt>
+                    <dd>
+                        <p>
+                            C language supports short-circuit evaluation for logical operators. This means that if the result of an expression can be determined by evaluating only <br/>
+                            one operand, the other operand will not be evaluated. For example, in the expression (a && b), if the value of 'a' is false, the value of 'b' does not <br/>
+                            need to be evaluated since the entire expression will be false regardless of the value of 'b'.
+                        </p>
+                        <p>
+                            <code>
+                                Example: if(ptr != NULL && *ptr > 0) { // do something }
+                            </code>
+                        </p>
+                        <p>
+                            In this example, if the pointer 'ptr' is NULL, the second operand (*ptr > 0) will not be evaluated. This prevents the program from crashing due to a null <br/>
+                            pointer dereference.
+                        </p>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <p>
+                    Logical operators are commonly used in decision-making statements to control the flow of a program. For example, an if statement may use logical operators to determine <br/>
+                    whether or not to execute a block of code. Logical operators are also used in loops to control the iteration of the loop based on certain conditions. Understanding <br/>
+                    logical operators is essential for creating effective and efficient C programs.
+                </p>
+            </li>
+          </ol>
+          <button>
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/index.html/#logi_op">
+                Go back where you left<:--)
+            </a>
+          </button>
+    </body>
+</html>
