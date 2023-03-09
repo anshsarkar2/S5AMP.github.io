@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Conditional Operators in C 
+        </title>
+        <meta name="robots" content="follow,index">
+        <meta name="keywords" content="C programming language, Ternary operator, Conditional expression, Boolean logic in C,Comparison operators in C, Simplifying code in C, Efficiency in C programming, Avoiding complex code in C, Readability in C programming, Examples of conditional operators in C, Best practices for using conditional operators in C, S5AMP, C, s5amp">
+        <meta name="description" content="Learn about the ternary operator, also known as the conditional operator, in C programming language. Discover how to use it to create expressions that evaluate to a certain value depending on a given condition. See examples of its usage in C programming, such as simplifying code that performs a simple check and assigns a value based on the result of the check. Gain a deeper understanding of best practices for using this operator, such as using it sparingly and only in situations where it improves code readability and efficiency. This knowledge is essential for programming in C and creating efficient and readable code.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Favicon starting -->
+<link rel="apple-touch-icon" sizes="57x57" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-16x16.png">
+<link rel="manifest" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--Favicon end-->
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="https://anshsarkar2.github.io/S5AMP.github.io/">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">C
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">C|About it</a>
+                <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html">C|Contents</a>
+                <a href="#">C|History</a>
+                <a href="#">C|Uses</a>
+              </div>
+            </div> 
+            <a onclick="Contact()">Contact</a>
+            <a onclick="About()">About</a>
+          </div>
+          <h1>
+            <b>
+                <u>
+                    Conditional Operator
+                </u>
+            </b>
+          </h1>
+          <p>
+            <p>
+                Conditional operators, also known as ternary operators, are used in C programming language to create expressions that evaluate to a certain value depending on a <br/>
+                given condition. The conditional operator in C is denoted by the symbol "?:".
+            </p>
+            <p>
+                The syntax of the conditional operator is as follows:<br/>
+                <code>
+                    condition ? expression1 : expression2;
+                </code>
+            </p>
+            <p>
+                The condition is evaluated first. If the condition is true, expression1 is evaluated and becomes the value of the entire expression. If the condition is false, <br/>
+                expression2 is evaluated and becomes the value of the entire expression.
+            </p>
+            <p>
+                For example, consider the following code:<br/>
+                <code>
+                    int a = 5;<br/>
+                    int b = 3;<br/>
+                    int max = (a > b) ? a : b;<br/>
+                </code><br/>
+                In this code, the condition (a > b) is evaluated first. Since a is greater than b, the expression a is evaluated and becomes the value of max. Therefore, max <br/>
+                will have a value of 5.
+            </p>
+            <p>
+                The conditional operator can be used in many different situations where a value needs to be selected based on a certain condition. For example, it can be used to <br/>
+                simplify code that performs a simple check and assigns a value based on the result of the check.
+            </p>
+            <p>
+                <code>
+                    int x = -5;<br/>
+                    int absolute_value = (x < 0) ? -x : x;<br/>
+                </code><br/>
+                In this code, the condition (x < 0) is evaluated first. Since x is negative, the expression -x is evaluated and becomes the value of absolute_value. Therefore, <br/>
+                absolute_value will have a value of 5.
+            </p>
+            <p>
+                It is important to note that the conditional operator should be used sparingly and only in situations where it improves the readability and efficiency of <br/>
+                the code. Using it excessively can make the code harder to read and understand, especially for inexperienced programmers.
+            </p>
+            <p>
+                In conclusion, the conditional operator in C is a powerful tool for creating expressions that evaluate to different values depending on a <br/>
+                given condition. It can be used to simplify code and make it more efficient, but it should be used with care to avoid making the code <br/>
+                more difficult to understand.
+            </p>
+          </p>
+          <button id="btn_arth">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/index.html">
+                Go back to where you left <:--)
+            </a>
+          </button>
+    </body>
+</html>
