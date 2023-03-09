@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Assignment Operator's
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="robots" content="follow,index">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Favicon starting -->
+<link rel="apple-touch-icon" sizes="57x57" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-16x16.png">
+<link rel="manifest" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--Favicon end-->
+<meta name="keywords" content="Assignment Operator, = operators,Compound assignment Operator, Arthemetic assignment Operator, Right shift assignment operator, Bitwise assignment Operator, Precedence of assignment OPerator,Expression evaluation in C, Variable assignment in C, Assigning statements in C, Example of assignment operator in C, Understanding assignment operators, Usage of assignment operator in C, Compound assignment operator in C, S5AMP, C  ">
+<meta name="description" content="Learn about the assignment operators in C, including the basic assignment operator "=", compound assignment operators, arithmetic and bitwise assignment operators, and the right shift assignment operator. Understand the precedence of the assignment operator, how expressions are evaluated in C, and see examples of variable assignment and compound assignments. Master the usage of assignment operators in C for effective programming.">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="https://anshsarkar2.github.io/S5AMP.github.io/">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">C
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">C|About it</a>
+                <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html">C|Contents</a>
+                <a href="#">C|History</a>
+                <a href="#">C|Uses</a>
+              </div>
+            </div> 
+            <a onclick="Contact()">Contact</a>
+            <a onclick="About()">About</a>
+          </div>
+          <p>
+            <h1>
+                <b>
+                    <u>
+                        Assignment Operator
+                    </u>
+                </b>
+            </h1>
+          </p>
+          <p>
+            The assignment operator (=) in C is used to assign a value to a variable. It takes the value on the right-hand side and assigns it to the variable on the <br/>
+            left-hand side. The syntax for the assignment operator is:<br/>
+            <code>
+                variable = value;
+            </code>
+            <br/>
+            <p>
+                For example,
+                <code>
+                    int x;
+                    <br/>
+                    x = 10;
+                </code>
+                <br/>
+                This will assign the value 10 to x.
+            </p>
+            <p>
+                The assignment operator can also be combined with arithmetic operators to perform arithmetic operations and assign the result to a variable. For example, <br/>
+                the following code adds 5 to the variable 'x' and assigns the result to 'y':
+                <br/>
+                <code>
+                    int x=10;<br/>
+                    int y;<br/>
+                    y = x+5;
+                </code>
+            </p>
+            <p>
+                The assignment operator can also be used to assign the value of one variable to another variable. For example, the following code assigns the value of 'x' to 'y':<br/>
+                <code>
+                    int x = 10;<br/>
+                    int y;<br/>
+                    y = x;
+                </code>
+            </p>
+            <p>
+                In C, the assignment operator has a lower precedence than arithmetic operators, so expressions with both arithmetic and assignment operators are evaluated from <br/>
+                right to left. For example, the following code first multiplies 5 by 2 and then adds the result to 'x':<br/>
+                <code>
+                    int x = 10;<br/>
+                    x = 5*2+x;
+                </code><br/>
+                <p>
+                    It is important to note that the assignment operator only assigns the value on the right side to the variable on the left side. It does not compare or test for <br/>
+                    equality. To test for equality, the relational operator (==) should be used instead. For example, the following code tests whether 'x' is equal to 10:<br/>
+                    <code>
+                        int x = 10;
+                        <br/>
+                        if(x==10){<br/>
+                            //do something<br/>
+                        }
+                    </code><br/>
+                </p>
+                <p>
+                    In C, the assignment operator can also be combined with other operators to form compound assignment operators. Compound assignment operators perform an arithmetic <br/>
+                    operation and assign the result to the variable on the left side in a single statement. The syntax for compound assignment operators is:<br/>
+                    <code>
+                        variable operator = value;
+                    </code>
+                </p>
+                <p>
+                    For example, the following code adds 5 to 'x' and assigns the result to 'x':<br/>
+                    <code>
+                        int x=10;<br/>
+                        x+ = 5;<br/>
+                    </code>
+                </p>
+                <p>
+                    The compound assignment operators in C include:
+                    <ul>
+                        <li>
+                            += (addition assignment)
+                        </li>
+                        <li>
+                            -= (subtraction assignment)
+                        </li>
+                        <li>
+                            *= (multiplication assignment)
+                        </li>
+                        <li>
+                            /= (division assignment)
+                        </li>
+                        <li>
+                            %= (modulus assignment)
+                        </li>
+                        <li>
+                            <<= (left shift assignment)
+                        </li>
+                        <li>
+                            >>=(right shift assignment)
+                        </li>
+                        <li>
+                            &= (bitwise AND assignment)
+                        </li>
+                        <li>
+                            ^= (bitwise XOR assignment)
+                        </li>
+                        <li>
+                            |= (bitwise OR assignment)
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    Understanding the assignment operator and its various uses is important for programming <br/>
+                    in C, as it is one of the fundamental operators in the language.
+                </p>
+            </p>
+          </p>
+          <button id="btn_arth">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/index.html">
+                Go back where you left<:--)
+            </a>
+          </button>
+    </body>
+</html>
