@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Computational Problems in C
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Favicon starting -->
+<link rel="apple-touch-icon" sizes="57x57" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-16x16.png">
+<link rel="manifest" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--Favicon end-->
+<link rel="stylesheet" href="style.css">
+<meta name="robots" content="follow,index">
+<meta name="keywords" content=" C programming, arithmetic expressions, integer division, division by zero, overflow, underflow, order of evaluation, operator precedence, associativity, floating-point precision, S5AMP">
+<meta name="description" content="This article discusses common computational problems that can arise when working with arithmetic expressions in C programming. It covers issues such as integer division, division by zero, overflow and underflow, order of evaluation, operator precedence, associativity, and floating-point precision. By understanding these issues, programmers can write more robust and error-free code.">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="https://anshsarkar2.github.io/S5AMP.github.io/">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">C
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">C|About it</a>
+                <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html">C|Contents</a>
+                <a href="#">C|History</a>
+                <a href="#">C|Uses</a>
+              </div>
+            </div> 
+            <a onclick="Contact()">Contact</a>
+            <a onclick="About()">About</a>
+          </div>
+          <p>
+            <p>
+                While arithmetic expressions in C are generally straightforward to evaluate, there are some computational problems that can arise. Here are a few examples:<br/>
+               <p>
+                <ol>
+                    <li>
+                        <dl>
+                            <dt>
+                                Integer division:
+                            </dt>
+                            <dd>
+                                When dividing two integers, C uses integer division, which truncates the result to an integer value. For example, the expression 5 / 2 will <br/>
+                                result in 2, not 2.5. To get a floating-point result, one or both operands must be cast to a float or double type.<br/>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                Division by 0:
+                            </dt>
+                            <dd>
+                                Dividing any number by zero is undefined in C and will result in a runtime error. Programmers should ensure that their code does not attempt <br/>
+                                to divide by zero.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                Overflow and Underflow:
+                            </dt>
+                            <dd>
+                                When performing arithmetic with integers, the result must fit within the range of the data type being used. If the result is too large, it will <br/>
+                                overflow the range and produce an incorrect result. If the result is too small, it will underflow and also produce an incorrect result.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                Order of evaluation:
+                            </dt>
+                            <dd>
+                                As mentioned earlier, the order of evaluation for arithmetic operators in C is determined by operator precedence and associativity. If programmers <br/>
+                                do not understand these rules, they may write expressions that produce unexpected results.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                Floating-point precision:
+                            </dt>
+                            <dd>
+                                Due to the way that floating-point numbers are represented in memory, some arithmetic expressions may produce slightly different results than expected <br/>
+                                due to rounding errors. Programmers should be aware of this issue and use appropriate rounding functions to ensure accurate results.
+                            </dd>
+                        </dl>
+                    </li>
+                </ol>
+               </p> 
+               <p>
+                By understanding these common computational problems, programmers can write more robust and error-free arithmetic expressions in C. It's important to thoroughly test code <br/>
+                and handle potential edge cases to ensure that programs produce the expected results.
+               </p>
+            </p>
+          </p>
+          <button id="mybtn_s1">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/index.html">
+                Go Back where you left<:--)
+            </a>
+          </button>
+          <button id="mybtn_s2">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/typ_con_exp.html">
+                Go to next part
+            </a>
+          </button>
+    </body>
+</html>
