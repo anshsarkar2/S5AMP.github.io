@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="English">
+    <head>
+        <title>
+            Precedence of Arithmetic operators
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Favicon starting -->
+        <link rel="apple-touch-icon" sizes="57x57" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-16x16.png">
+        <link rel="manifest" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!--Favicon end-->
+        <link rel="stylesheet" href="style.css">
+        <meta name="keywords" content="C programming, arithmetic operators, operator precedence, unary operators, multiplicative operators, additive operators, relational operators, equality operators, logical AND operator, logical OR operator, conditional operator, assignment operators, parentheses, associativity, S5AMP">
+        <meta name="description" content="This article covers the operator precedence rules for arithmetic operators in C programming. By understanding the order of evaluation for each operator and the rules of associativity, programmers can create complex arithmetic expressions that produce accurate results. The article also highlights the importance of using parentheses to override precedence rules and ensure that expressions are evaluated in the correct order.">
+        <meta name="robots" content="follow,index">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="https://anshsarkar2.github.io/S5AMP.github.io/">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">C
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">C|About it</a>
+                <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html">C|Contents</a>
+                <a href="#">C|History</a>
+                <a href="#">C|Uses</a>
+              </div>
+            </div> 
+            <a onclick="Contact()">Contact</a>
+            <a onclick="About()">About</a>
+          </div>
+          <h3>
+            <b>
+                <u>
+                    Precedence of arithmetic operators
+                </u>
+            </b>
+          </h3>
+          <p>
+            <p>
+                In C programming, arithmetic operators have a specific precedence that determines the order in which they are evaluated. This means <br/>
+                certain operators are evaluated before others, regardless of the order in which they appear in the expression. The operator precedence <br/>
+                rules in C are similar to those in standard algebra, and they help ensure that expressions are evaluated correctly and produce the expected results.
+            </p>
+            <p>
+                The following table shows the operator precedence for arithmetic operators in C, arranged from highest to lowest:<br/>
+                <ol>
+                    <li>
+                        Parentheses ( )
+                    </li>
+                    <li>
+                        Unary operators: +, -, ++, --, !
+                    </li>
+                    <li>
+                        Multiplicative operators: *, /, %
+                    </li>
+                    <li>
+                        Additive operators: +, -
+                    </li>
+                    <li>
+                        Relational operators: <, >, <=, >=
+                    </li>
+                    <li>
+                        Equality operators: ==, !=
+                    </li>
+                    <li>
+                        Logical AND operator: &&
+                    </li>
+                    <li>
+                        Logical OR operator: ||
+                    </li>
+                    <li>
+                        Conditional operator: ? :
+                    </li>
+                    <li>
+                        Assignment operators: =, +=, -=, *=, /=, %=
+                    </li>
+                </ol>
+            </p>
+            <p>
+                Operators with higher precedence are evaluated before operators with lower precedence. For example, in the expression a + b * c, the <br/>
+                multiplication operator has higher precedence than the addition operator, so b * c is evaluated first.
+            </p>
+            <p>
+                If two operators have the same precedence, the order of evaluation is determined by associativity. For example, the additive operators <br/>
+                have the same precedence, and they are evaluated from left to right. This means that in the expression a + b - c, the addition is <br/>
+                evaluated first, followed by the subtraction.
+            </p>
+            <p>
+                It's important to note that the precedence and associativity rules in C can be overridden by using parentheses to explicitly specify the <br/>
+                order of evaluation. For example, in the expression (a + b) * c, the addition is evaluated first because it is inside parentheses.
+            </p>
+            <p>
+                By understanding the operator precedence rules in C, you can create complex arithmetic expressions that produce the expected results. <br/>
+                It's important to use parentheses when necessary to ensure that expressions are evaluated in the correct order.
+            </p>
+          </p>
+          <button id="mybtn_s1">
+            <A href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/index.html">
+                Go Back to where you left <:--)
+            </A>
+          </button>
+          <button id="mybtn_s2">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/som_compu_prob.html">
+                Go to next part{Some computational Problems}
+            </a>
+          </button>
+    </body>
+</html>
