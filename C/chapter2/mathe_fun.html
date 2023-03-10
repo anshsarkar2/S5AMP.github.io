@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Mathemetical Functions in C
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Favicon starting -->
+        <link rel="apple-touch-icon" sizes="57x57" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-16x16.png">
+        <link rel="manifest" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!--Favicon end-->
+        <link rel="stylesheet" href="style.css">
+        <meta name="robots" content="follow,index">
+        <meta name="keywords" content="C programming, mathematical functions, library functions, trigonometric functions, hyperbolic functions, logarithmic functions, exponential functions, S5AMP">
+        <meta name="description" content="Mathematical functions are an essential part of programming in C. C provides a library of functions that includes various mathematical functions such as trigonometric functions, hyperbolic functions, logarithmic functions, and exponential functions. These functions allow developers to perform complex mathematical operations with ease. In this article, we will explore mathematical functions in C programming, including their definitions, syntax, and examples.">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="https://anshsarkar2.github.io/S5AMP.github.io/">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">C
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">C|About it</a>
+                <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html">C|Contents</a>
+                <a href="#">C|History</a>
+                <a href="#">C|Uses</a>
+              </div>
+            </div> 
+            <a onclick="Contact()">Contact</a>
+            <a onclick="About()">About</a>
+          </div>
+          <p>
+            <p>
+                Mathematical functions are pre-defined functions in C that perform mathematical operations on <br/>
+                numbers. These functions can be called upon to solve various mathematical problems that require <br/>
+                complex calculations. C provides a rich set of mathematical functions that can be used to solve <br/>
+                mathematical problems in programming.
+            </p>
+            <p>
+                C's math library contains a wide range of mathematical functions that include trigonometric <br/>
+                functions, logarithmic functions, exponential functions, rounding functions, power functions, <br/>
+                and more. These functions are defined in the "math.h" header file, which must be included in <br/>
+                your program to use these functions.
+            </p>
+            <p>
+                <dl>
+                    <dt>
+                        Some of the commonly used mathematical functions in C include:
+                    </dt>
+                    <dd>
+                        <ol>
+                            <li>
+                                sin(): This function calculates the sine of an angle in radians.
+                            </li>
+                            <li>
+                                cos(): This function calculates the cosine of an angle in radians.
+                            </li>
+                            <li>
+                                tan(): This function calculates the tangent of an angle in radians.
+                            </li>
+                            <li>
+                                log(): This function calculates the natural logarithm of a number.
+                            </li>
+                            <li>
+                                exp(): This function calculates the exponential of a number.
+                            </li>
+                            <li>
+                                pow(): This function calculates the value of a number raised to a given power.
+                            </li>
+                            <li>
+                                sqrt(): This function calculates the square root of a number.
+                            </li>
+                            <li>
+                                ceil(): This function rounds up a given floating-point number to the next higher integer.
+                            </li>
+                            <li>
+                                floor(): This function rounds down a given floating-point number to the next lower integer.
+                            </li>
+                            <li>
+                                fabs(): This function returns the absolute value of a floating-point number.
+                            </li>
+                        </ol>
+                    </dd>
+                </dl>
+            </p>
+            <p>
+                These functions are used to perform mathematical operations on numerical data in C programming. To <br/>
+                use these functions in your program, you must include the math.h header file at the beginning of your <br/>
+                program. The functions can then be called with their respective names and parameters.
+            </p>
+            <p>
+                Real-life examples of mathematical functions in C programming include calculating the area of a circle, <br/>
+                calculating the volume of a sphere, calculating the distance between two points, calculating the angle <br/>
+                between two vectors, and more.
+            </p>
+            <p>
+                In summary, the mathematical functions in C provide a powerful tool for solving complex mathematical <br/>
+                problems in programming. By leveraging these functions, programmers can perform complex calculations <br/>
+                with ease, improving the efficiency and accuracy of their programs.
+            </p>
+            <p>
+                <dl>
+                    <dt>
+                        In C programming language, there are three hyperbolic functions available that can be used to perform mathematical operations. These functions are:
+                    </dt>
+                    <dd>
+                        <ol>
+                            <li>
+                                sinh(x): This function returns the hyperbolic sine of x, where x is an angle in radians. <br/>
+                                The formula used for calculating the hyperbolic sine is: (e^x - e^-x)/2. This function can <br/>
+                                be used to calculate the values of hyperbolic sine for various values of x.
+                            </li>
+                            <li>
+                                cosh(x): This function returns the hyperbolic cosine of x, where x is an angle in radians. The <br/>
+                                formula used for calculating the hyperbolic cosine is: (e^x + e^-x)/2. This function can be used <br/>
+                                to calculate the values of hyperbolic cosine for various values of x.
+                            </li>
+                            <li>
+                                tanh(x): This function returns the hyperbolic tangent of x, where x is an angle in radians. The <br/>
+                                formula used for calculating the hyperbolic tangent is: (sinh(x)/cosh(x)). This function can be <br/>
+                                used to calculate the values of hyperbolic tangent for various values of x.
+                            </li>
+                        </ol>
+                    </dd>
+                </dl>
+            </p>
+          </p>
+          <button id="mybtn_s1">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/index.html">
+                Go back to the main page. <:--)
+            </a>
+          </button>
+          <button id="mybtn_s2">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/index.html">
+                Hurray! the chapter is over, Lets move on to another one.
+            </a>
+          </button>
+    </body>
+</html>

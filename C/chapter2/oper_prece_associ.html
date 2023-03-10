@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Operators Precedence and Associativity in C
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Favicon starting -->
+        <link rel="apple-touch-icon" sizes="57x57" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-16x16.png">
+        <link rel="manifest" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!--Favicon end-->
+        <link rel="stylesheet" href="style.css">
+        <meta name="robots" content="follow,index">
+        <meta name="keywords" content="Operators precedence, operator associativity, C programming language, operator precedence table, arithmetic operators, relational operators, logical operators, bitwise operators, type conversions, S5AMP.">
+        <meta name="description" content="In C programming language, operators precedence and associativity determine the order of evaluation of expressions. Understanding these concepts is essential for writing correct and efficient code. This article covers the basics of operator precedence and associativity, including the operator precedence table, examples of arithmetic, relational, logical, and bitwise operators, and type conversions.">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="https://anshsarkar2.github.io/S5AMP.github.io/">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">C
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">C|About it</a>
+                <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html">C|Contents</a>
+                <a href="#">C|History</a>
+                <a href="#">C|Uses</a>
+              </div>
+            </div> 
+            <a onclick="Contact()">Contact</a>
+            <a onclick="About()">About</a>
+          </div>
+          <p>
+            <p>
+                Operators precedence and associativity are essential concepts in C programming language that govern <br/>
+                how expressions involving multiple operators are evaluated. The order of operations is important in <br/>
+                ensuring that expressions are evaluated correctly and consistently. In this article, we will provide <br/>
+                a detailed explanation of operators precedence and associativity in C, including their definition, <br/>
+                concepts, rules, examples, and real-life use cases.
+            </p>
+            <p>
+                Operators precedence refers to the order in which the different operators in an expression are <br/>
+                evaluated. C defines a set of rules that specify the precedence of each operator in an expression. <br/>
+                For example, multiplication and division have a higher precedence than addition and subtraction, <br/>
+                so they are evaluated before the addition and subtraction operations. Parentheses can be used to <br/>
+                override the default precedence and force certain operations to be evaluated first.
+            </p>
+            <p>
+                Associativity, on the other hand, refers to the order in which operators with the same precedence <br/>
+                are evaluated. C defines left-to-right associativity for most operators, which means that <br/>
+                expressions with the same precedence are evaluated from left to right. However, there are <br/>
+                some operators such as assignment operators that have right-to-left associativity, meaning <br/>
+                that expressions with the same precedence are evaluated from right to left.
+            </p>
+            <p>
+                The following table shows the operators precedence in C, from highest to lowest:<br/>
+                <table>
+                    <tr>
+                        <th>
+                            Operators
+                        </th>
+                        <th>
+                            Associativity
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            () [] -> .
+                        </td>
+                        <td>
+                            Left to right
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ! ~ ++ -- + - * & sizeof
+                        </td>
+                        <td>
+                            Right to left
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            * / %
+                        </td>
+                        <td>
+                            Left to right
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            +-
+                        </td>
+                        <td>
+                            Left to right
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            << >>
+                        </td>
+                        <td>
+                            Left to right
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            < <= > >=
+                        </td>
+                        <td>
+                            Left to right
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            == !=
+                        </td>
+                        <td>
+                            Letf to Right
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &
+                        </td>
+                        <td>
+                            Left to right
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ^
+                        </td>
+                        <td>
+                            Left to right
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            |
+                        </td>
+                        <td>
+                            Left to right
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &&
+                        </td>
+                        <td>
+                            Left to right
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ||
+                        </td>
+                        <td>
+                            Left to right
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ?:
+                        </td>
+                        <td>
+                            Right to left
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            = += -= *= /= %= <<= >>= &= ^= |=
+                        </td>
+                        <td>
+                            Right to Left
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ,
+                        </td>
+                        <td>
+                            Right to Left
+                        </td>
+                    </tr>
+                </table>
+            </p>
+            <p>
+                It is important to note that expressions within parentheses are always evaluated first, <br/>
+                regardless of their precedence or associativity. For example, in the expression <b>'5 * (3 + 2)'</b>, <br/>
+                the parentheses force the addition operation to be evaluated first, resulting in the value <br/>
+                of 5 being multiplied by 5 instead of 3.
+            </p>
+            <p>
+                In addition, C allows the use of parentheses to override the default precedence and <br/>
+                associativity of operators. For example, in the expression <b>'5 + 3 * 2'</b>, the <br/>
+                multiplication operation has a higher precedence than the addition operation, so it <br/>
+                would normally be evaluated first. However, we can use parentheses to change the order <br/>
+                of evaluation: <b>'(5 + 3) * 2'</b>.
+            </p>
+            <p>
+                Operators precedence and associativity are important concepts to understand when working <br/>
+                with complex expressions in C. By following the rules and guidelines set by C, developers <br/>
+                can ensure that their code is evaluated correctly and consistently.
+            </p>
+          </p>
+          <button id="mybtn_s1">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/index.html">
+                Go to main Page<:--)
+            </a>
+          </button>
+          <button id="mybtn_s2">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/mathe_fun.html">
+                Go to next page!{Last part of this chapter!} (--:>
+            </a>
+          </button>
+    </body>
+</html>
