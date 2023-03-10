@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Implict type Conversion
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Favicon starting -->
+        <link rel="apple-touch-icon" sizes="57x57" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-16x16.png">
+        <link rel="manifest" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!--Favicon end-->
+        <link rel="stylesheet" href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/style.css">
+        <meta name="robots" content="follow,index">
+        <script src="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/style.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="https://anshsarkar2.github.io/S5AMP.github.io/">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">C
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">C|About it</a>
+                <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html">C|Contents</a>
+                <a href="#">C|History</a>
+                <a href="#">C|Uses</a>
+              </div>
+            </div> 
+            <a onclick="Contact()">Contact</a>
+            <a onclick="About()">About</a>
+          </div>
+          <p>
+            <h1>
+                <b>
+                    <u>
+                        IMPLICT TYPE CONVERSION
+                    </u>
+                </b>
+            </h1>
+            <p>
+                Implicit type conversion in C is the automatic conversion of one data type to another data type during expression evaluation. The type <br/>
+                conversion is implicit because it is performed by the compiler without any need for the programmer to specify it explicitly. The <br/>
+                conversion is based on the rules of the type hierarchy, which defines the order in which data types are promoted or demoted in expressions.
+            </p>
+            <p>
+                The concept of implicit type conversion evolved to make programming easier and more efficient. It allows the programmer to use <br/>
+                different data types in expressions without worrying about the data type conversion. It also allows the compiler to optimize the <br/>
+                code by reducing the number of explicit type casts required in the program. Implicit type conversion is an important concept in C <br/>
+                because it can affect the result of an expression and can lead to unexpected behavior if not used carefully.
+            </p>
+            <p>
+                There are two types of implicit type conversion in C: promotion and demotion. Promotion is the automatic conversion of a lower-ranked <br/>
+                data type to a higher-ranked data type in the type hierarchy, while demotion is the automatic conversion of a higher-ranked data type <br/>
+                to a lower-ranked data type.
+            </p>
+            <p>
+                Promotion is used when a value of a lower-ranked data type is used in an expression with a higher-ranked data type. For example, <br/>
+                consider the following code:<br/>
+                <code>
+                    int i = 10;<br/>
+                    float f = 2.5;<br/>
+                    float result = i +f;
+                </code><br/>
+                In this code, the variable <b>'i'</b> has an integer data type, and the variable <b>'f'</b> has a float data type. When they are added <br/>
+                together, the result is automatically promoted to a float data type because<b> 'float'</b> has a higher rank in the type hierarchy than<b> 'int'</b>.
+            </p>
+            <p>
+                Demotion is used when a value of a higher-ranked data type is used in an expression with a lower-ranked data type. For example, consider <br/>
+                the following code:<br/>
+                <code>
+                    float f = 2.5;<br/>
+                    int i = f;
+                </code><br/>
+                In this code, the variable <b>'f'</b> has a float data type, and the variable <b>i</b> has an integer data type. When <b>'f'</b> is <br/>
+                assigned to <b>i</b>, the value is automatically demoted to an integer data type. The compiler truncates the fractional part of <b>'f'</b> <br/>
+                and assigns the integer value to<b> i</b>. This can lead to loss of precision and should be used with caution.
+            </p>
+            <p>
+                Implicit type conversion is not always straightforward and can sometimes lead to unexpected behavior. For example, consider the following code:<br/>
+                <code>
+                    char c = 'A';<br/>
+                    int i = c;
+                </code><br/>
+                In this code, the variable <b>'c'</b> has a char data type, and the variable <b>'i'</b> has an integer data type. When <b>'c'</b> is assigned to <b>'i'</b>,<br/>
+                the compiler automatically promotes <b>'c'</b> to an int data type. However, this can lead to unexpected behavior if the value of <b>'c'</b> is negative.<br/>
+                In this case, the sign bit of <b>'c'</b> is extended to fill the higher bits of the int data type, resulting in a negative value for <b>i</b>.
+            </p>
+            <p>
+                Implicit type conversion is used extensively in real-life examples, such as in scientific calculations, financial applications, and game development. For <br/>
+                example, in scientific calculations, values may need to be converted from one data type to another to maintain precision and accuracy. In financial <br/>
+                applications, currency values may need to be converted from one data type to another to account for different exchange rates. In game development, <br/>
+                values may need to be converted from one data type to another to ensure smooth animation and gameplay.
+            </p>
+            <p>
+                In summary, implicit type conversion is an important concept in C that allows for automatic conversion of one data type to another data type during <br/>
+                expression evaluation. It is used to make programming easier and more efficient, but can also lead to unexpected behavior if not used <br/>
+                carefully. Understanding the type hierarchy and the rules of implicit type conversion is essential.
+            </p>
+          </p>
+          <button id="mybtn_s1">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/typ_con_exp.html">
+                Go back to the previous page <:--)
+            </a>
+          </button>
+          <button id="mybtn_s2">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/chapter2/ext/explict.html">
+                Go and learn explict type conversion (--:>
+            </a>
+          </button>
+    </body>
+</html>

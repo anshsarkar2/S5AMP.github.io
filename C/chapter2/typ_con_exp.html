@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Type Conversions in Expressions of C 
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Favicon starting -->
+        <link rel="apple-touch-icon" sizes="57x57" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-16x16.png">
+        <link rel="manifest" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!--Favicon end-->
+        <link rel="stylesheet" href="style.css">
+        <meta name="robots" content="follow,index">
+        <meta name="keywords" content="C language, type conversions, expression, data types, conversion hierarchy, integer promotion, arithmetic conversions, floating-point promotion, type casting, S5AMP">
+        <meta name="description" content="In C language, type conversions play an important role in expressions. Understanding the conversion hierarchy is essential for efficient and correct programming. This hierarchy determines the order in which data types are promoted or demoted in expressions. This article covers the four steps of the conversion hierarchy, including integer promotion, the usual arithmetic conversions, floating-point promotion, and explicit type casting.">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="https://anshsarkar2.github.io/S5AMP.github.io/">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">C
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">C|About it</a>
+                <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html">C|Contents</a>
+                <a href="#">C|History</a>
+                <a href="#">C|Uses</a>
+              </div>
+            </div> 
+            <a onclick="Contact()">Contact</a>
+            <a onclick="About()">About</a>
+          </div>
+          <p>
+            <h1>
+                <b>
+                    <u>
+                        TYPE CONVERSIONS IN EXPRESSIONS
+                    </u>
+                </b>
+            </h1>
+            <p>
+                Type conversions in C expressions refer to the automatic or explicit conversion of one data type to another <br/>
+                within an expression. C provides a variety of type conversion rules that allow programmers to perform operations <br/>
+                with mixed data types in expressions. Here are a few examples of type conversions in C:
+            </p>
+            <p>
+                <ol>
+                    <li>
+                        <dl>
+                            <dt>
+                                Implicit type conversion:
+                            </dt>
+                            <dd>
+                                C will automatically convert operands to a common type in expressions. For example, if an integer and <br/>
+                                a floating-point value are used in an expression, the integer value will be automatically converted <br/>
+                                to a floating-point value before the operation is performed.<a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/ext/implict.html">To learn more about this, click here!</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                Explicit type conversion: 
+                            </dt>
+                            <dd>
+                                C allows programmers to explicitly convert data types using type-casting operators. For example, a <br/>
+                                programmer can use the (int) operator to cast a floating-point value to an integer.<a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/ext/explict.html">To learn more about this, click here!</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                Promotions:
+                            </dt>
+                            <dd>
+                                C will automatically promote certain data types to larger data types in expressions. For example, if an <br/>
+                                integer and a character are used in an expression, the character value will be promoted to an integer <br/>
+                                value before the operation is performed.<a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/ext/promotions.html">To learn more about this, click here!</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                Demotions:
+                            </dt>
+                            <dd>
+                                C will automatically demote certain data types to smaller data types in expressions. For example, if a long <br/>
+                                integer and a short integer are used in an expression, the short integer value will be demoted to a long <br/>
+                                integer value before the operation is performed.<a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/ext/demotions.html">To learn more about this, click here!</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ol>
+            </p>
+            <p>
+                It's important for programmers to be aware of these type conversion rules when working with expressions in C. Incorrect <br/>
+                type conversions can result in unexpected results or even runtime errors. Programmers should also be careful when using <br/>
+                explicit type-casting, as it can potentially result in data loss or rounding errors.
+            </p>
+          </p>
+    </body>
+</html>
