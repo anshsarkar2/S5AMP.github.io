@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Formatted Output in C
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Favicon starting -->
+<link rel="apple-touch-icon" sizes="57x57" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-16x16.png">
+<link rel="manifest" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--Favicon end-->
+<link rel="stylesheet" href="style.css">
+<meta name="robots" content="follow,index">
+<script src="style.js"></script>
+<meta name="keywords" content="C programming language, formatted output, printf(), format specifiers, data types, syntax,S5AMP">
+<meta name="description" content="This article provides an overview of formatted output in C programming language, including the use of printf() function and format specifiers. It explains the basic syntax for writing formatted output and provides examples of the most commonly used format specifiers. The article emphasizes the importance of data types and their corresponding format specifiers in controlling the output format. It also highlights the potential security vulnerabilities associated with formatted output functions and the need for proper input validation.">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="https://anshsarkar2.github.io/S5AMP.github.io/">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">C
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">C|About it</a>
+                <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html">C|Contents</a>
+                <a href="#">C|History</a>
+                <a href="#">C|Uses</a>
+              </div>
+            </div> 
+            <a onclick="Contact()">Contact</a>
+            <a onclick="About()">About</a>
+          </div>
+          <p>
+            <p>
+                Formatted output in C programming language is the process of printing data to the output stream in a specific format. It allows the programmer to <br/>
+                control the output format and display data in a way that is easy to read and understand.
+            </p>
+            <p>
+                The formatted output functions in C use a format string to specify the output format. The format string is a series of conversion specifications that <br/>
+                correspond to the data type and the order in which they appear in the output stream. The conversion specifications are represented by special format <br/>
+                specifiers that start with the percentage sign (%). The most commonly used format specifiers are:
+            </p>
+            <p>
+                <ol>
+                    <li>
+                        %d: print an integer in decimal format
+                    </li>
+                    <li>
+                        %f: print a floating-point number
+                    </li>
+                    <li>
+                        %c: print a single character
+                    </li>
+                    <li>
+                        %s: print a string
+                    </li>
+                    <li>
+                        %ld: print a long integer in decimal format
+                    </li>
+                    <li>
+                        %lf: print a double-precision floating-point number
+                    </li>
+                </ol>
+            </p>
+            <p>
+                The basic syntax for writing formatted output in C is:<br/>
+                <syntax>
+                    printf("format string", variable1, variable2, ...);
+                </syntax>
+            </p>
+            <p>
+                In this syntax, the format string specifies the output format, and the variables are the values that will be printed to the output stream. For example, the <br/>
+                following code prints an integer and a floating-point number to the standard output:<br/>
+                <code>
+                    int i = 42;<br/>
+                    float f = 3.14159;<br/>
+                    printf("i = %d, f = %f\n", i, f);<br/>
+                </code><br/>
+            </p>
+            <p>
+                This code uses the %d and %f format specifiers to print the values of the variables i and f, respectively, to the standard output. The output format is <br/>
+                specified by the format string "i = %d, f = %f\n", which contains the %d and %f format specifiers along with additional text.
+            </p>
+            <p>
+                Formatted output in C can also be used to write data to a file using functions such as fprintf() and fputc(). These functions work in a similar way to <br/>
+                printf() and putchar(), but allow the programmer to specify the output file stream and the output format.
+            </p>
+            <p>
+                It is important to note that formatted output functions can also be vulnerable to format string attacks if the output format is not properly <br/>
+                validated. The programmer should always validate the output format and limit the number of characters that can be printed to prevent format <br/>
+                string attacks.
+            </p>
+            <p>
+                In summary, formatted output in C is a powerful feature that allows the programmer to control the output format and display data in a way that is easy <br/>
+                to read and understand. It is important to use formatted output functions carefully to avoid security vulnerabilities.
+            </p>
+          </p>
+          <button id="mybtn_s1">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter3/index.html">
+                Go back to previous main page of chapter <:--)
+            </a>
+          </button>
+          <button id="mybtn_s2">
+            <a href="https://anshsarkar2.github.io/SS5AMP.github.io/C/chapter4/index.html">
+                Move to next chapter.. (--:>
+            </a>
+          </button>
+    </body>
+</html>

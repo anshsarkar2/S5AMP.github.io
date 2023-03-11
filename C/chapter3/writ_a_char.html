@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Writing a Character in C 
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Favicon starting -->
+<link rel="apple-touch-icon" sizes="57x57" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-16x16.png">
+<link rel="manifest" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--Favicon end-->
+<link rel="stylesheet" href="style.css">
+<meta name="robots" content="follow,index">
+<script src="style.js"></script>
+<meta name="keywords" content="C programming language, writing a character, putchar(), putc(), fputc(), fprintf(), file stream, file pointer, formatted string,S5AMP.">
+<meta name="description" content="In this article, we will discuss various methods of writing a character in the C programming language. We will cover functions such as putchar(), putc(), fputc(), and fprintf(), which are used to write a character to the standard output or to a file. We will provide syntax, parameter, and usage details for each function. Additionally, we will explore the concept of file stream and file pointer and how they are used with these functions to write characters to a specific file. The article will also cover the use of formatted strings with fprintf() function. Examples will be provided to illustrate each method of writing a character in C.">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="https://anshsarkar2.github.io/S5AMP.github.io/">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">C
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">C|About it</a>
+                <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html">C|Contents</a>
+                <a href="#">C|History</a>
+                <a href="#">C|Uses</a>
+              </div>
+            </div> 
+            <a onclick="Contact()">Contact</a>
+            <a onclick="About()">About</a>
+          </div>
+          
+          <p>
+            <p>
+                In C programming language, writing a character to the standard output or to a file is a common operation. Just like reading a character, there are several ways <br/>
+                to write a character in C, including using functions such as putchar(), putc(), fputc(), and fprintf(). In this article, we will discuss the various methods of <br/>
+                writing a character in C, their syntax, parameters, and usage.
+            </p>
+            <p>
+                <ol>
+                    <li>
+                        <dl>
+                            <dt>
+                                <b>putchar()</b> function:
+                            </dt>
+                            <dd>
+                                The putchar() function is used to write a single character to the standard output. Its syntax is:<br/>
+                                <syntax>
+                                    int putchar(int ch);
+                                </syntax><br/>
+                                Here, ch is the character to be written. The putchar() function returns the written character as <br/>
+                                an unsigned char cast to an int or EOF on error.<br/>
+                                <dl>
+                                    <dt>
+                                        Example:
+                                    </dt>
+                                    <dd>
+                                        <code>
+                                            #include &lt;stdio.h&gt;<br/>
+                                                int main() {<br/>
+                                                    char ch = 'A';<br/>
+                                                    putchar(ch);<br/>
+                                                    return 0;<br/>
+                                                }                 <br/>                               
+                                        </code><br/>
+                                    </dd>
+                                    <dt>
+                                        Output
+                                    </dt>
+                                    <dd>
+                                        <samp>
+                                            A
+                                        </samp>
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <b>
+                                    putc()
+                                </b>
+                                function:
+                            </dt>
+                            <dd>
+                                The putc() function is similar to putchar() in that it writes a single character to the output. <br/>
+                                However, putc() also allows you to write to a specific file stream. Its syntax is:<br/>
+                                <syntax>
+                                    int putc(int ch, FILE *stream);
+                                </syntax><br/>
+                                <p>
+                                    Here, ch is the character to be written, and stream is the file stream to which the character is <br/>
+                                    written. The putc() function returns the written character as an unsigned char cast to an int or <br/>
+                                    EOF on error.
+                                </p>
+                                <dl>
+                                    <dt>
+                                        Example:
+                                    </dt>
+                                    <dd>
+                                        <code>
+                                            #include &lt;stdio.h&gt;<br/>
+                                                int main() {<br/>
+                                                    char ch = 'B';<br/>
+                                                    FILE *fptr;<br/>
+                                                    fptr = fopen("test.txt", "w");<br/>
+                                                    putc(ch, fptr);<br/>
+                                                    fclose(fptr);<br/>
+                                                    return 0;<br/>
+                                                }                 <br/>                               
+                                        </code>
+                                    </dd>
+                                    <dd>
+                                        In this example, we are writing the character 'B' to the file "test.txt" using the putc() function.
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <b>fputc()</b> Function
+                            </dt>
+                            <dd>
+                                The fputc() function is similar to putc() in that it writes a single character to the output. However, <br/>
+                                fputc() takes a file pointer as its first argument rather than a file stream. Its syntax is:<br/>
+                                <syntax>
+                                    int fputc(int ch, FILE *stream);
+                                </syntax>
+                            </dd>
+                            <dd>
+                                Here, ch is the character to be written, and stream is the file pointer to which the character is <br/>
+                                written. The fputc() function returns the written character as an unsigned char cast to an int or <br/>
+                                EOF on error.
+                            </dd>
+                            <dd>
+                                <dl>
+                                    <dt>
+                                        Example
+                                    </dt>
+                                </dl>
+                                <dd>
+                                    <code>
+                                    #include &lt;stdio.h&gt;<br/>
+                                        int main() {<br/>
+                                            char ch = 'C';<br/>
+                                            FILE *fptr;<br/>
+                                            fptr = fopen("test.txt", "w");<br/>
+                                            fputc(ch, fptr);<br/>
+                                            fclose(fptr);<br/>
+                                            return 0;<br/>
+                                        }                 <br/>   
+                                    </code>                    
+                                </dd>
+                                <dd>
+                                    In this example, we are writing the character 'C' to the file "test.txt" using the fputc() function.
+                                </dd>
+                            </dd>
+                        </dl>
+                    </li>
+                    <dl>
+                        <dt>
+                            <b>fprintf()</b> Function:
+                        </dt>
+                        <dd>
+                            The fprintf() function is used to write a formatted string to a file. It can be used to write characters, <br/>
+                            numbers, and other types of data to a file. Its syntax is:<br/>
+                            <syntax>
+                                int fprintf(FILE *stream, const char *format, ...);
+                            </syntax>
+                        </dd>
+                        <dd>
+                            Here, stream is the file pointer to which the string is written, format is the format string, and ... are the <br/>
+                            optional parameters that are used in the format string. The fprintf() function returns the number of <br/>
+                            characters written to the file or a negative value if an error occurs.
+                        </dd>
+                        <dl>
+                            <dt>
+                                Example:
+                            </dt>
+                            <dd>
+                                <code>
+                                    #include &gt;stdio.h&gt;
+                                        int main() {<br/>
+                                            char ch = 'D';<br/>
+                                            FILE *fptr;<br/>
+                                            fptr = fopen("test.txt", "w");<br/>
+                                            fprintf(fptr, "%c", ch);<br/>
+                                            fclose(fptr);<br/>
+                                            return 0;<br/>
+                                        }<br/>                                        
+                                </code>
+                            </dd>
+                            <dd>
+                                In this example, we are writing the character 'D' to the file "
+                            </dd>
+                        </dl>
+                    </dl>
+                </ol>
+            </p>
+          </p>
+          <button id="mybtn_s1">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter3/index.html">
+                Go back to the page of content for this chapter <:--)
+            </a>
+          </button>
+          <button id="mybtn_s2">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter3/form_inpu.html">
+                Move to next topic {i.e. Formatted input} (--:>
+            </a>
+          </button>
+    </body>
+</html>

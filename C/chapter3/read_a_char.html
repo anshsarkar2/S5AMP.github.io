@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Reading a Character in C 
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Favicon starting -->
+<link rel="apple-touch-icon" sizes="57x57" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-16x16.png">
+<link rel="manifest" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--Favicon end-->
+<link rel="stylesheet" href="style.css">
+<meta name="robots" content="follow,index">
+<script src="style.js"></script>
+<meta name="keywords" content="C programming language, reading a character, character input, getchar(), scanf(), fgetc(), fgets(), character test functions, character manipulation, ASCII table, S5AMP.">
+<meta name="description" content="In this article, we will discuss in detail about reading a character in the C programming language. We will cover various methods of character input, such as getchar(), scanf(), fgetc(), and fgets(). We will also discuss character manipulation and character test functions, which are essential for working with character data. The article will provide a thorough explanation of the theory and concepts involved, along with code examples and practical tips. Additionally, we will explore the ASCII table and its significance in character handling.">
+    </head>
+    <body>
+        <body>
+            <div class="topnav">
+                <a class="active" href="https://anshsarkar2.github.io/S5AMP.github.io/">Home</a>
+                <div class="dropdown">
+                  <button class="dropbtn">C
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">C|About it</a>
+                    <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/C-index.html">C|Contents</a>
+                    <a href="#">C|History</a>
+                    <a href="#">C|Uses</a>
+                  </div>
+                </div> 
+                <a onclick="Contact()">Contact</a>
+                <a onclick="About()">About</a>
+              </div>
+        <p>
+            <h1>
+                <b>
+                    <u>
+                        Reading a Character
+                    </u>
+                </b>
+            </h1>
+            <p>
+                <h3>
+                    <b>
+                        Introduction
+                    </b>
+                </h3>
+                <p>
+                    One of the fundamental operations in C programming is the ability to read data into a program, which is often referred to as input. Reading character data is a common task in <br/>
+                    C programming, as it allows a program to accept textual input from users or external sources. In this article, we will explore the concept of reading a character in C language, <br/>
+                    including its definition, operations, and examples.
+                </p>
+            </p>
+            <p>
+                <h3>
+                    <b>
+                        What is a Character in C Language?
+                    </b>
+                </h3>
+                <p>
+                    In C programming, a character is a data type that represents a single character, such as a letter, digit, or symbol. In C, characters are stored as integers, where each character is <br/>
+                    assigned a unique integer value, known as its ASCII code. For example, the ASCII code for the letter "A" is 65, while the code for the digit "0" is 48.
+                </p>
+            </p>
+            <p>
+                <h3>
+                    <b>
+                        Operations for Reading a Character in C Language:
+                    </b>
+                </h3>
+                <p>
+                    There are several operations for reading a character in C language. The most commonly used methods include using the scanf() function, the getchar() function, and the fgetc() function.<br/>
+                    <ol>
+                        <li>
+                            <dl>
+                                <dt>
+                                    scanf() function:
+                                </dt>
+                                <dd>
+                                    The scanf() function is used to read input data from the standard input stream, which is usually the keyboard. The scanf() function reads data into variables specified <br/>
+                                    by the programmer, which can include character variables. To read a single character using scanf(), the %c format specifier is used. Here is an example:<br/>
+                                    <code>
+                                        #include &lt;stdio.h&gt;<br/>
+                                        <br/>
+                                        int main(){<br/>
+                                            char ch;<br/>
+                                            printf("Enter a character:  ");<br/>
+                                            scanf("%c", &ch);<br/>
+                                            printf("You entered: %c", ch);<br/>
+                                            return0;<br/>
+                                        }<br/>
+                                    </code><br/>
+                                    In this example, the user is prompted to enter a character, and the scanf() function is used to read a single character from the standard input stream. The character is then <br/>
+                                    stored in the variable ch, and the program prints the character back to the user.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <b>getchar()</b> function:
+                                </dt>
+                                <dd>
+                                    The getchar() function is another commonly used method for reading a single character in C language. The getchar() function reads a single character from the standard input stream <br/>
+                                    and returns its integer value. Here is an example:<br/>
+                                    <code>
+                                        #include &lt;stdio.h&gt;<br/>
+                                        <br/>
+                                            int main() {<br/>
+                                               char ch;<br/>
+                                               printf("Enter a character: ");<br/>
+                                               ch = getchar();<br/>
+                                               printf("You entered: %c", ch);<br/>
+                                               return 0;<br/>
+                                            } <br/>                            
+                                    </code><br/>
+                                    In this example, the user is prompted to enter a character, and the getchar() function is used to read a single character from the standard input stream. The character is then stored in <br/>
+                                    the variable ch, and the program prints the character back to the user.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <b>fgetc()</b> function:
+                                </dt>
+                                <dd>
+                                    The fgetc() function is used to read a single character from a file. This function takes a file pointer as an argument and returns the integer value of the next character in the file. Here is <br/>
+                                    an example:<br/>
+                                    <code>
+                                        #include &lt;stdio.h&gt;<br/>
+                                        <br/>
+                                            int main() {<br/>
+                                               char ch;<br/>
+                                               FILE *fp;<br/>
+                                            <br/>
+                                               fp = fopen("file.txt", "r");<br/>
+                                               ch = fgetc(fp);<br/>
+                                               printf("The first character in the file is: %c", ch);<br/>
+                                               fclose(fp);<br/>
+                                               return 0;<br/>
+                                            }                <br/>                            
+                                    </code><br/>
+                                    In this example, the fgetc() function is used to read the first character in a file named "file.txt". The character is then stored in the variable ch, and the program prints the character <br/>
+                                    back to the user.
+                                </dd>
+                            </dl>
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    <dl>
+                        <dt>
+                            complete list of character test functions in C programming language:
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li>
+                                    <dl>
+                                        <dt>
+                                            <b>isalnum()</b>
+                                        </dt>
+                                        <dd>
+                                            The isalnum() function is used to check whether a given character is an alphanumeric character. An alphanumeric character is any character that is either an alphabetic character or a digit. <br/>
+                                            The isalnum() function returns a non-zero value if the character is alphanumeric and zero otherwise.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>
+                                            <b>isalpha()</b>:
+                                        </dt>
+                                        <dd>
+                                            The isalpha() function is used to check whether a given character is an alphabetic character. An alphabetic character is any character that is either an uppercase letter or a lowercase letter. <br/>
+                                            The isalpha() function returns a non-zero value if the character is alphabetic and zero otherwise.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>
+                                            <b>iscntrl()</b>:
+                                        </dt>
+                                        <dd>
+                                            The iscntrl() function is used to check whether a given character is a control character. A control character is a character that is used to control some aspect of the output of the program, <br/>
+                                            such as a newline character or a backspace character. The iscntrl() function returns a non-zero value if the character is a control character and zero otherwise.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>
+                                            <b>isdigit()</b>
+                                        </dt>
+                                        <dd>
+                                            The isdigit() function is used to check whether a given character is a digit. A digit is any of the numbers from 0 to 9. The isdigit() function returns a non-zero value if the character is a <br/>
+                                            digit and zero otherwise.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>
+                                            <b>isgraph()</b>
+                                        </dt>
+                                        <dd>
+                                            The isgraph() function is used to check whether a given character is a printable character other than a space character. A printable character is any character that can be printed on the <br/>
+                                            screen or other output device. The isgraph() function returns a non-zero value if the character is a printable character other than a space character and zero otherwise.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>
+                                            <b>
+                                                islower()
+                                            </b>
+                                        </dt>
+                                        <dd>
+                                            The islower() function is used to check whether a given character is a lowercase letter. The islower() function returns a non-zero value if the character is a lowercase letter and zero <br/>
+                                            otherwise.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>
+                                            <b>
+                                                isprint()
+                                            </b>
+                                        </dt>
+                                        <dd>
+                                            The isprint() function is used to check whether a given character is a printable character. A printable character is any character that can be printed on the screen or other output device. <br/>
+                                            The isprint() function returns a non-zero value if the character is a printable character and zero otherwise.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>
+                                            <b>
+                                                ispunct()
+                                            </b>
+                                        </dt>
+                                        <dd>
+                                            The ispunct() function is used to check whether a given character is a punctuation character. A punctuation character is any character that is not a space, digit, or letter. The ispunct() <br/>
+                                            function returns a non-zero value if the character is a punctuation character and zero otherwise.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>
+                                            <b>
+                                                isspace()
+                                            </b>
+                                        </dt>
+                                        <dd>
+                                            The isspace() function is used to check whether a given character is a whitespace character. A whitespace character is any character that is used to separate words or lines, such as a space <br/>
+                                            character or a newline character. The isspace() function returns a non-zero value if the character is a whitespace character and zero otherwise.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>
+                                            <b>
+                                                isupper()
+                                            </b>
+                                        </dt>
+                                        <dd>
+                                            The isupper() function is used to check whether a given character is an uppercase letter. The isupper() function returns a non-zero value if the character is an uppercase letter and zero otherwise.<br/>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>
+                                            <b>
+                                                isxdigit()
+                                            </b>
+                                        </dt>
+                                        <dd>
+                                            The isxdigit() function is used to check whether a given character is a hexadecimal digit. A hexadecimal digit is any of the numbers from 0 to 9 or the letters from A to F (or a to f). The isxdigit() <br/>
+                                            function returns a non-zero value if the character is a hexadecimal digit and zero otherwise.
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ol>
+                            <p>
+                                Each of these functions returns a non-zero value if the character meets the criteria defined by the function, and zero otherwise. These functions can be useful for a variety of tasks, such as validating user input or <br/>
+                                processing text data.
+                            </p>
+                        </dd>
+                    </dl>
+                </p>
+                <p>
+                    <h3>
+                        <b>
+                            Conclusion:
+                        </b>
+                    </h3>
+                    <p>
+                        In conclusion, reading a character in C language is a fundamental operation that is essential for many programming tasks. There are several methods for reading a single character in C language, including using the scanf() <br/>
+                        function, the getchar() function, and the fgetc() function. Each of these methods has its advantages and disadvantages, depending on the specific programming task at hand
+                    </p>
+                </p>
+            </p>
+        </p>
+        <button id="mybtn_s1">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter3/index.html">
+                Go back to the previous page. <:--)
+            </a>
+        </button>
+        <button id="mybtn_s2">
+            <a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter3/writ_a_char.html">
+                Go to next part {i.e.Writing a Character} (--:>
+            </a>
+        </button>
+    </body>
+</html>

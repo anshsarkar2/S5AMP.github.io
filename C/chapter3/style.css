@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1c1b22;
+  }
+  .head1
+  {
+    color: #ff5400;
+    font-family: cursive;
+  }
+  p
+  {
+    font-size: 20px;
+  }
+  dt
+  {
+    font-weight: 1000;
+    font-size: x-large;
+  }
+  #btn_arth
+  {
+    background-color: #1c1b22;
+    color: #ff5400;
+    font-size: large;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border: #ff5400;
+    border-radius: 5px;
+  }
+  #btn_arth:active
+  {
+    color: #ff5400;
+  }
+  /*Top nav bar*/
+  .topnav {
+    overflow: hidden;
+    background-color: #ff5400;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #00c99c;
+    color: white;
+  }
+  
+  
+  /*Dropdown*/
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+cursive
+{
+  font-style: italic;
+  font-family: cursive;
+  color: antiquewhite;
+}
+body
+{
+  color: antiquewhite;
+  padding-left: 1px;
+}
+code
+{
+  font-weight: 800;
+  color: #ff5400;
+}
+codesnipets
+{
+  color: cadetblue;
+  font-weight: 300;
+}
+#mybtn_s1
+{
+  background-color: #1c1b22;
+  color: #ff5400;
+  font-size: large;
+  width: 49%;
+  height: 50px;
+  cursor: pointer;
+ 
+}
+#mybtn_s2
+{
+  background-color: #1c1b22;
+  color: #ff5400;
+  font-size: large;
+  width: 49%;
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+  padding-left: 2%;
+}
+syntax
+{
+  font-family: monospace;
+  color: goldenrod;
+  font-weight: 900;
+}
+dd
+{
+  font-size: 20px;
+}
+
+
+
