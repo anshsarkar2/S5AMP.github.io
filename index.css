@@ -15,7 +15,7 @@ body, html {
   
   }
   .bgimg-1 {
-    background-image: url("Screenshot\ from\ 2023-01-08\ 17-48-22.png");
+    background-image: url("Screenshot/from/2023-01-08/17-48-22.png");
     min-height: 100%;
   }
   .bgimg-4{
@@ -154,10 +154,31 @@ body, html {
   button:hover {
     opacity: 0.8;
   }
-
-
-
-
+  .vl {
+    border-left: burlywood solid 3px;
+    height: 650px;
+    position: absolute;
+    left: 0%;
+    margin-left:5%;
+    top: 0;
+  }
+ .vl1
+ {
+  border-top: burlywood solid 3px;
+  height: 3px;
+  position: absolute;
+  top: 0%;
+  margin-top: 45%;
+  left: 0;
+  width: 100%;
+ }
+ .imgtest
+ {
+  background-image: url("https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-57x57.png");
+  padding-top:0 ;
+  position: absolute top;
+  background-repeat: no-repeat;
+ }
 
 
 
