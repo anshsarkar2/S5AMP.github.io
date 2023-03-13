@@ -8,6 +8,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="try.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <script>
+            // Check the device type
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            var isTablet = /iPad|Android/i.test(navigator.userAgent);
+    
+            // Redirect if accessing from mobile or tablet
+            if (isMobile || isTablet) {
+                window.location.href = "https://anshsarkar2.github.io/S5AMP.github.io/index.html"; // Replace with the mobile website URL
+            }
+        </script>
     </head>
     <body>
         <div class="nam">S5AMP</div>
