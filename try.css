@@ -1,6 +1,6 @@
 body
 {
-    background-color: black;
+    background-color: #0d1216;
 }
 .nam
 {
@@ -16,8 +16,122 @@ body
 .contact
 {
     position: absolute;
-    top: 3%;
-    left: 97%;
-    transform: translate(-3%, -97%);
+    top: 7%;
+    left: 95%;
+    transform: translate(-7%, -95%);
+    color: antiquewhite;
+    font-size: 20px;
+}
+.social
+{
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    transform: translate(-5%, -2%);
+    color: antiquewhite;
+    font-size: 20px;
+    cursor: pointer;
+}
+.logo
+{
+    position: absolute;
+    top: 12.5%;
+    left: 42.857142857%;
+    transform: translate(-12.5%, -42.857142857%);
+    height: 0px;
+    width: 0px;
+}
+.cent
+{
+    position: absolute;
+    top: 40%;
+    left: 20.428571429%;
+    transform: translate(-25%, -21.428571429%);
+    font-size: 50px;
+    color: #25b9b9;
+    font-family: 'Times New Roman', Times, serif;
+}
+.centcom
+{
+    position: absolute;
+    top: 30%;
+    left: 13.428571429%;
+    font-size: 90px;
     color: antiquewhite;
 }
+.centcom1
+{
+    position: absolute;
+    top: 58%;
+    left: 28%;
+    font-size: 90px;
+    color: antiquewhite;
+}
+.futo
+{
+    position: absolute;
+    top: 77%;
+    left:10%;
+    font-size: 17px;
+    color: #d0d0da;
+    background-color: #0d1216;
+    border-radius: 0px;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#next
+{
+    background-color: #b07943;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 87%;
+    left: 94.7%;
+    cursor: pointer;
+}
+.comlogo
+{
+    position: absolute;
+    top: 92%;
+    left: 0%;
+}
+
+.dropbtn {
+    background-color:#0d1216;
+    color: white;
+    font-size: 16px;
+    border: none;
+    position: absolute;
+    top: 3%;
+    left: 87%;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    top: 3%;
+    left: 86%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
