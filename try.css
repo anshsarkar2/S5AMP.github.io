@@ -73,7 +73,7 @@ body
     top: 77%;
     left:10%;
     font-size: 17px;
-    color: #d0d0da;
+    color: #1afa38;
     background-color: #0d1216;
     border-radius: 0px;
     border: none;
@@ -93,7 +93,7 @@ body
 .comlogo
 {
     position: absolute;
-    top: 92%;
+    top: 91%;
     left: 0%;
 }
 
@@ -135,3 +135,12 @@ body
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  .licence
+  {
+    font-size: xx-small;
+    position: absolute;
+    top: 98%;
+    left: 4%;
+    color: whitesmoke;
+  }
