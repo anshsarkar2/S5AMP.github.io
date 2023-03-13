@@ -1,0 +1,23 @@
+body
+{
+    background-color: black;
+}
+.nam
+{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    transform: translate(-3%, -2%);
+    color: antiquewhite;
+    font-weight: 900;
+    font-size: 25px;
+    font-family: "Sofia", sans-serif;
+}
+.contact
+{
+    position: absolute;
+    top: 3%;
+    left: 97%;
+    transform: translate(-3%, -97%);
+    color: antiquewhite;
+}
