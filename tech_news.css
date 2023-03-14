@@ -1,0 +1,13 @@
+body, html
+{
+    color: crimson;
+    height: 100%;
+    width: 100%;
+}
+.top_line
+{
+    position: absolute;
+    top: 4%;
+    font-weight: 900;
+    color: #355e1d;
+}

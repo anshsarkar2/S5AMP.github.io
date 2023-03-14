@@ -79,6 +79,7 @@ body
     border: none;
     text-decoration: underline;
     cursor: pointer;
+    text-decoration: chartreuse;
 }
 #next
 {
