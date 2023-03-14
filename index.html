@@ -51,6 +51,28 @@
 <!--Favicon end-->
 
 
+<script>
+  // Check the device type
+  var isLaptop = window.matchMedia("(min-width: 1024px)").matches;
+  var isMacOS = navigator.platform.toUpperCase().indexOf('MAC')>=0;
+
+  // Redirect to different URL based on device type
+  if (isLaptop) {
+    window.location.replace("https://anshsarkar2.github.io/S5AMP.github.io/index.html");
+  } else if (isMacOS) {
+    window.location.replace("https://anshsarkar2.github.io/S5AMP.github.io/index.html");
+  } else {
+    window.location.replace("https://anshsarkar2.github.io/S5AMP.github.io/index.html");
+  }
+</script>
+</body>
+</html>
+
+In this example, we are checking if the device accessing the website is a laptop or PC by using the matchMedia function and checking if the viewport width is greater than or equal to 1024 pixels. For macOS, we are checking the navigator.platform property to see if it contains the string "MAC".
+
+If the device is a laptop or PC, the script will redirect the user to the URL https://www.example.com/laptop. If the device is a macOS, the script will redirect the user to the URL https://www.example.com/macos. For all other devices, the script will redirect the user to the URL https://www.example.com/other.
+
+Note that this code only redirects the user based on the initial device type detected when they first access the website. If the user later
 
 
 
