@@ -1,13 +1,54 @@
 body, html
 {
-    color: crimson;
+    background-color: #f1829a;
     height: 100%;
     width: 100%;
 }
 .top_line
 {
     position: absolute;
-    top: 4%;
+    top: 8%;
+    left:2%;
+    right: 2%;
+    bottom: 95%;
     font-weight: 900;
-    color: #355e1d;
+    color: #110b0b;
+}
+.head
+{
+    position: absolute;
+    top: 4%;
+    left: 45%;
+    transform: translate(-2%, -45%);
+    color: bisque;
+    font-size: x-large;
+    font-family: "Sofia", sans-serif;
+}
+.not_img
+{
+    position: absolute;
+    top: 10%;
+    left: 12.5%;
+}
+.social
+{
+    color: crimson;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    transform: translate(-4%, -3%);
+    font-size: x-large;
+}
+i{
+    padding-left: 10px;
+}
+ol
+{
+    padding-left: 10%;
+    font-size: 16px;
+    color: #3d280d;
+}
+li,a
+{
+    color: #3d280d;
 }
