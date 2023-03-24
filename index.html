@@ -50,7 +50,15 @@
 <meta name="theme-color" content="#ffffff">
 <!--Favicon end-->
 
-
+<script>
+  // Check if user is accessing website from a laptop
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      // Do nothing - user is accessing from a mobile device
+  } else {
+      // Redirect user to laptop version of the website
+      window.location.href = "https://anshsarkar2.github.io/S5AMP.github.io/try.html";
+  }
+</script>
 
 
 </head>
@@ -59,17 +67,44 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WF9PMP6"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-<div class="bgtst1">
-  <div>
-    <div class="caption">
-      <span class="border">
-        <img href="Pictures/repair.png" width="30px" height="30px">The site is currently on some visual work.<br/>
-        Please visit till 26<sup>th</sup>March 2023 i.e. according to I.S.T
-      </span>
-      </div>
-  </div><div class="vl"></div><div class="vl1"></div><div class="imgtest"></div>
-</div>
-</body>
+
+  <header>
+		<div class="logo">
+			<a href="index.html"><img src="162b6e383bb6dc469d22a3f6bea7e066.ico/android-icon-36x36.png" height="40px" width="40px"> S5AMP</a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="tutorials.html">Tutorials</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="live_sessions.html">Live Sessions</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="hero">
+			<h1>Learn C Programming Language</h1>
+			<p>Start your journey to become a C programming expert with S5AMP. Our comprehensive tutorials and live sessions will help you learn the language quickly and easily.</p>
+			<a href="tutorials.html" class="cta">Get Started</a>
+		</section>
+		<section class="features">
+			<div class="feature">
+				<h2>Comprehensive Tutorials</h2>
+				<p>Our tutorials cover everything you need to know about C programming language. From basic syntax to advanced topics, we have it all.</p>
+			</div>
+			<div class="feature">
+				<h2>Latest News</h2>
+				<p>Stay up-to-date with the latest news and developments in the world of C programming language.</p>
+			</div>
+			<div class="feature">
+				<h2>Live Sessions</h2>
+				<p>Join our live sessions to get hands-on experience with C programming language. Our expert instructors will guide you every step of the way.</p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 S5AMP. All rights reserved.</p>
+	</footer>
 <script>
 
 

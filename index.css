@@ -1,8 +1,97 @@
 body, html {
+   overflow-x: hidden;
+  }
+  .parallax
+  {
+    position: absolute;
     height: 100%;
-    margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
-    color: #777;
+  }
+  .parallax-item
+  {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .p-item1
+  {
+    background: url("imges/m_1.png") center/cover no-repeat;
+  }
+  .p-item3
+  {
+    background: url("imges/m_3.png") bottom/100% no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+  }
+  .p-item4
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10000%;
+    height: 100%;
+    content: "";
+    background: url("imges/fog_2.png") repeat-x;
+    background-size: contain;
+    background-position: center;
+    animation: marquee 20s linear infinite;
+  }
+  .p-item4::before
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10000%;
+    height: 100%;
+    content: "";
+    background: url("imges/fog_2.png") repeat-x;
+    background-size: contain;
+    background-position: center;
+    animation: marquee 20s linear infinite;
+    z-index: 1;
+  }
+  @keyframes marquee{
+    0%
+    {
+      transform: translate(0,0,0);
+    }
+    100%
+    {
+      transform: translate3d(-200vw,0,0);
+    }
+  }
+  .container
+  {
+    position: relative;
+    padding: 30px;
+    z-index: 1;
+    max-width: 1170px;
+    margin: 0 auto;margin-top: 100vh;
+  }
+  .content-header{
+    font-family: sans-serif;
+    color: white;
+    text-align: center !important;
+    text-transform: uppercase;
+    margin-left: 200px;
+  }
+  .content-header h1{
+    font-size: 120px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: -40px;
+  }
+  .content-header h3{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+  }
+  .content{
+    width: 200px;
+    height: auto;
+    margin-right: 40px;
   }
   
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
@@ -179,31 +268,15 @@ body, html {
   position: absolute top;
   background-repeat: no-repeat;
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*********************
+ 
+ 
+ 
+ /*********************
   *****Working Time*****
   *********************/
   .bgtst1
   {
-    background-image: url("Pictures/futo.jpg");
+    background-color: #140d12;
     min-height: 100%;
   }
   .bgtst1{
@@ -214,3 +287,160 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  #menu_c{
+    position: absolute;
+    top: 1%;
+    color: #cfcfcf;
+    left: 73%;
+    font-size: 10px;
+    font-family: sans-serif;
+    cursor: pointer;
+    width: 100px;
+    height:40px;
+    background-color: #81aa10;
+    opacity:10px;
+  }
+
+
+
+
+
+
+
+
+
+
+  /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-color: #ddd;
+  padding: 100px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-top: 0;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta {
+  background-color: #333;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #444;
+}
+
+/* Features Section Styles */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.feature {
+  flex-basis: 30%;
+  background-color: #f2f2f2;
+  padding: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feature h2 {
+  margin-top: 0;
+}
+
+.feature p {
+  font-size: 18px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  /* Header Styles */
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav {
+      margin-top: 20px;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav li {
+      margin: 10px 0;
+  }
+
+  /* Hero Section Styles */
+  .hero {
+      padding: 50px;
+  }
+
+  /* Features Section Styles */
+  .feature {
+      flex-basis: 45%;
+  }
+
+  /* CTA Button Styles */
+  .cta {
+      font-size: 16px;
+      padding: 8px 16px;
+  }
+}
