@@ -100,7 +100,7 @@
                 color: #cabe10;
                 font-size: 30px;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                margin-left: 20px;
+                margin-left: 10px;
             }
             code
             {
@@ -124,17 +124,28 @@
             }
             #nextpgbtn
             {
-                margin-left: 200px;
-                width: 100px;
-                height: 50px;
-                background-color: #1c1b22;
+              background-color: #1c1b22;
+              color: #ff5400;
+              font-size: large;
+              width: 49%;
+              height: 50px;
+              cursor: pointer;
             }
             #prevpgbtn
             {
-                margin-left: 20px;
-                width:100px ; 
-                height:50px ;
-                background-color: #1c1b22;
+              background-color: #1c1b22;
+              color: #ff5400;
+              font-size: large;
+              width: 49%;
+              height: 50px;
+              cursor: pointer;
+              text-align: center;
+              padding-left: 2%;
+            }
+            #prevpgbtn a, #nextpgbtn a
+            {
+              color: #ff5400;
+              font-weight: 800;
             }
 
 
@@ -168,10 +179,16 @@
             }
             .h1-2-content
             {
-                color: #000000;
-                text-align: center;
-                font-size: medium;
-                font-stretch: narrower;
+                color: #cabe10;
+                text-align: left;
+                font-size: 25px;
+                margin-left: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .h1-2-content b
+            {
+              font-weight: 800;
+              color: #ffffff;
             }
             .code
             {
@@ -186,9 +203,17 @@
             }
             #nextbtn
             {
-                width: 100px;
-                height: 50px;
-                background-color: #1c1b22;
+              background-color: #1c1b22;
+              color: #ff5400;
+              font-size: large;
+              width: 49%;
+              height: 50px;
+              cursor: pointer;
+            }
+            #nextbtn a
+            {
+              color: #ff5400;
+              font-weight: 800;
             }
 
 
