@@ -91,9 +91,11 @@
             }
             .h2-head
             {
-                color: rgb(9, 32, 163);
-                font-size: 40px;
-                font-family: cursive;
+              color: #13cec4;
+              font-size: 40px;
+              font-family:cursive;
+              margin-left: 10px;
+              font-stretch: normal;
             }
             .h2-content
             {
@@ -101,6 +103,18 @@
                 font-size: 30px;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 margin-left: 10px;
+            }
+            .par
+            {
+                color: #cabe10;
+                font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin-left: 10px;
+            }
+            li  b
+            {
+              font-weight: 900;
+              color: #ddc2c2b7;
             }
             code
             {
@@ -111,10 +125,14 @@
             }
             table , th , td
             {
-                border: dotted;
-                background-color: rgb(31, 30, 30);
+                border: #ff5400 solid;
+                background-color: #3c883a;
                 border-radius: 5px;
                 border-color: black;
+                text-align: center;
+                font-weight: 500;
+                align-items: center;
+                color: #000;
             }
             cursive
             {
@@ -146,6 +164,21 @@
             {
               color: #ff5400;
               font-weight: 800;
+            }
+            #prevbtn
+            {
+              background-color: #1c1b22;
+              color: #ff5400;
+              font-size: large;
+              width: 49%;
+              height: 50px;
+              cursor: pointer;
+              text-align: center;
+              padding-left: 2%;
+            }
+            caption
+            {
+              color: #ff5400;
             }
 
 
@@ -214,6 +247,10 @@
             {
               color: #ff5400;
               font-weight: 800;
+            }
+            hr
+            {
+              color: #ddd;
             }
 
 
