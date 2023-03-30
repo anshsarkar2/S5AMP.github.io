@@ -94,6 +94,7 @@
 			max-width: 100%;
 		}
 	</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <!--Favicon starting -->
             <link rel="apple-touch-icon" sizes="57x57" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-57x57.png">
             <link rel="apple-touch-icon" sizes="60x60" href="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-60x60.png">
@@ -121,9 +122,25 @@
 		<p>What would you like to do next?</p>
 		<ul>
 			<li><a href="https://anshsarkar2.github.io/S5AMP.github.io/C/chapter2/index.html" class="btn" id="next-chapter">Move to next chapter</a> Continue your learning journey by moving on to the next chapter of the course.</li>
-			<li><a href="https://anshsarkar2.github.io/S5AMP.github.io/C/motivational/moti.html" class="btn" id="motivation-btn">Get some motivational doses</a> Take a break and get inspired with some motivational quotes.</li>
-			<li><a href="https://anshsarkar2.github.io/S5AMP.github.io/C/video/video.html" class="btn" id="song-btn">Listen to a song for relaxation</a> Take a moment to relax and listen to a soothing song.</li>
+			<li><a onclick="motivational()" class="btn" id="motivation-btn">Get some motivational doses</a> Take a break and get inspired with some motivational quotes.</li>
+			<li><a onclick="video()" class="btn" id="song-btn">Listen to a song for relaxation</a> Take a moment to relax and listen to a soothing song.</li>
 			<li><a href="https://anshsarkar2.github.io/S5AMP.github.io/index.html" class="btn" id="back-to-main">Quit and go back to main page</a> Return to the main page of the course.</li>
 		</ul>
+        <p>
+            If you want to use the 2<sup>nd</sup> and the 3<sup>rd</sup> Options and want to contribute by giving feedback , please click in the mail below!<br/>
+            <a href="mailto:s5ampuserservices5amp@gmail.com"><i class="fa fa-envelope" style="align-items: center; color: black;"></i></a>
+        </p>
 	</div>	
-</body>    
+    <a href="https://instagram.com/s5amp2023"><i class="fa fa-instagram" style="color: #7fff00; font-size: xx-large; position: absolute; top: 3%; left:2%;"></i></a>
+    <br/>
+    <a href="https://twitter.com/s5amp"><i class="fa fa-twitter" style="color: #0909a8; position: absolute; font-size: xx-large; top: 10%; left: 2%;"></i></a>
+</body>   
+<script>
+    function motivational(params) {
+        alert("Currently the feature is on work!");
+    }
+    function video(params) {
+        alert("Currently the feature is on prototype stage!\n Please use the first and the last option currently!");
+    }
+</script> 
+</html>
