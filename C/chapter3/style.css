@@ -116,8 +116,11 @@ cursive
 }
 body
 {
-  color: antiquewhite;
-  padding-left: 1px;
+  color: #cabe10;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10px;
+    padding-left:1px;
 }
 code
 {
