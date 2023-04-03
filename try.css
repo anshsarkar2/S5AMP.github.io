@@ -29,8 +29,13 @@ body
     left: 2%;
     transform: translate(-5%, -2%);
     color: antiquewhite;
-    font-size: 20px;
+    font-size: 27px;
+    padding-top: 5px;
     cursor: pointer;
+}
+.social br
+{
+    padding-top: 50px;
 }
 .logo
 {
