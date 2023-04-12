@@ -13,7 +13,7 @@ function checkCode() {
                     code: code,
                     timestamp: new Date().toISOString()
                 };
-                fetch('https://anshsarkar2.github.io/S5AMP.github.io/login/login_data.json', {
+                fetch('login_data.json', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

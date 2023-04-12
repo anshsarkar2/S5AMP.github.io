@@ -333,7 +333,18 @@ header {
   font-weight: bold;
   text-decoration: none;
 }
-
+nam{
+  font-family: AvenirNextLTPro-Regular;
+  color: lightcoral;
+}
+@font-face {
+  font-family: 'AvenirNextLTPro-Regular';
+  src: url('http://anthillrealtors.co.id/wp-content/themes/x-child/Fonts/AvenirNextLTPro-Regular.eot');
+  src: url('http://anthillrealtors.co.id/wp-content/themes/x-child/Fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('http://anthillrealtors.co.id/wp-content/themes/x-child/Fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+  url('http://anthillrealtors.co.id/wp-content/themes/x-child/Fonts/AvenirNextLTPro-Regular.ttf') format('truetype'),
+  url('http://anthillrealtors.co.id/wp-content/themes/x-child/Fonts/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
+}
 nav ul {
   list-style: none;
   margin: 0;

@@ -1,0 +1,53 @@
+body{
+  background-color: black;
+}
+nam{
+  font-family: AvenirNextLTPro-Regular;
+  color: lightcoral;
+}
+@font-face {
+  font-family: 'AvenirNextLTPro-Regular';
+  src: url('http://anthillrealtors.co.id/wp-content/themes/x-child/Fonts/AvenirNextLTPro-Regular.eot');
+  src: url('http://anthillrealtors.co.id/wp-content/themes/x-child/Fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('http://anthillrealtors.co.id/wp-content/themes/x-child/Fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+  url('http://anthillrealtors.co.id/wp-content/themes/x-child/Fonts/AvenirNextLTPro-Regular.ttf') format('truetype'),
+  url('http://anthillrealtors.co.id/wp-content/themes/x-child/Fonts/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
+}
+.container {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    height: 30px;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  button[type="button"] {
+    font-size: 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .container h1{
+    color: aqua;
+  }
