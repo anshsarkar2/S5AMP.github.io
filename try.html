@@ -48,11 +48,11 @@
 <meta name="msapplication-TileImage" content="https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <!--Favicon end-->
-<script src="install.js"></script>
+<script src="https://anshsarkar2.github.io/S5AMP.github.io/install.js"></script>
     </head>
     <body>
         <div class="nam">S5AMP</div>
-        <button onclick="showInstallPrompt()" style="color: #FF0000; background-color: bisque; width: 100px; height: 17px; position: absolute; left: 9%; top: 3%; cursor: pointer;">Install S5AMP</button>
+        <button id="install-button" style="color: #FF0000; background-color: bisque; width: 100px; height: 17px; position: absolute; left: 9%; top: 3%; cursor: pointer;">Install S5AMP</button>
         <div class="login"><a href="login.html" class="login">Login Now</a></div>
         <div class="contact"><a href="mailto:userservices5amp@gmail.com" style="color: aliceblue;">Email</a></div>
         <div class="dropdown"><a href="News/1.html" style="color: white; top: 2%; font-size: 26px; position: absolute;">&#128240;</a></div>
@@ -67,7 +67,7 @@
         // Check if the browser supports service workers
 if ('serviceWorker' in navigator) {
   // Register the service worker
-  navigator.serviceWorker.register('service-worker.js')
+  navigator.serviceWorker.register('https://anshsarkar2.github.io/S5AMP.github.io/sw.js')
     .then(registration => {
       console.log('Service worker registered successfully:', registration.scope);
     })

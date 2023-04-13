@@ -45,3 +45,20 @@ self.addEventListener('activate', event => {
       })
   );
 });
+
+self.addEventListener('load', () => {
+  if (navigator.serviceWorker.controller) {
+    // Service worker is active
+    navigator.serviceWorker.ready
+      .then(reg => {
+        reg.showNotification('Welcome to S5AMP', {
+          body: 'Install this app to access it even offline',
+          icon: 'https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-96x96.png',
+          tag: 's5amp-notification'
+        });
+      })
+      .catch(e => {
+        console.error(e);
+      });
+  }
+});
