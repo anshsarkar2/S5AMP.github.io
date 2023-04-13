@@ -1,0 +1,47 @@
+{
+    "name": "S5AMP",
+    "short_name": "S5AMP",
+    "start_url": "https://anshsarkar2.github.io/S5AMP.github.io/index.html",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#2196f3",
+    "icons": [
+      {
+        "src": "https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-72x72.png",
+        "type": "image/png",
+        "sizes": "72x72",
+        "rel": "apple-touch-icon"
+      },
+      {
+        "src": "https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/favicon-96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-120x120.png",
+        "type": "image/png",
+        "sizes": "120x120"
+      },
+      {
+        "src": "https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-144x144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-152x152.png",
+        "type": "image/png",
+        "sizes": "152x152"
+      },
+      {
+        "src": "https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/android-icon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "https://anshsarkar2.github.io/S5AMP.github.io/162b6e383bb6dc469d22a3f6bea7e066.ico/apple-icon-180x180.png",
+        "type": "image/png",
+        "sizes": "180x180"
+      }
+    ]
+  }
+  
